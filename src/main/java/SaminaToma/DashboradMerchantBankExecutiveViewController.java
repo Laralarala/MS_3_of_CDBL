@@ -1,9 +1,13 @@
 package SaminaToma;
 
 import javafx.event.ActionEvent;
+import javafx.scene.layout.BorderPane;
 
 public class DashboradMerchantBankExecutiveViewController
 {
+    @javafx.fxml.FXML
+    private BorderPane dashboardMerchantBankBP;
+
     @javafx.fxml.FXML
     public void initialize() {
     }

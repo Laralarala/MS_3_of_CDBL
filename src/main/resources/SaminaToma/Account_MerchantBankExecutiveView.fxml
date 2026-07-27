@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="430.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SaminaToma.AccountMerchantBankExecutiveViewController">
+   <children>
+      <TextField fx:id="accIDTF" layoutX="21.0" layoutY="14.0" promptText="Account ID:" />
+      <TextField fx:id="accNameTF" layoutX="21.0" layoutY="50.0" promptText="Account Name:" />
+      <TextField fx:id="holderNameTF" layoutX="21.0" layoutY="87.0" promptText="Holder Name:" />
+      <TextField fx:id="balanceTF" layoutX="21.0" layoutY="127.0" promptText="Balance:" />
+      <ComboBox fx:id="statusCB" layoutX="21.0" layoutY="166.0" prefWidth="150.0" promptText="Status:" />
+      <Button layoutX="371.0" layoutY="27.0" mnemonicParsing="false" onAction="#handleSearchForAccOA" text="Search" />
+      <Button layoutX="371.0" layoutY="63.0" mnemonicParsing="false" onAction="#handleCreateForAccOA" text="Create" />
+      <Button layoutX="371.0" layoutY="100.0" mnemonicParsing="false" onAction="#handleUpdateForAccOA" text="Update" />
+      <Button layoutX="371.0" layoutY="140.0" mnemonicParsing="false" onAction="#handleDeleteForAccOA" text="Delete" />
+      <TableView fx:id="accountTV" layoutX="108.0" layoutY="215.0" prefHeight="200.0" prefWidth="335.0">
+        <columns>
+          <TableColumn fx:id="accIDColUser7" prefWidth="75.0" text="Account ID" />
+          <TableColumn fx:id="accNameColUser7" prefWidth="107.99993896484375" text="Account Name" />
+            <TableColumn fx:id="balanceColUser7" prefWidth="73.60003662109375" text="Balance" />
+            <TableColumn fx:id="statusColUser7" prefWidth="76.79997558593749" text="Status" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
