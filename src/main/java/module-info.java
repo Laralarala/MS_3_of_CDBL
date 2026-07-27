@@ -8,4 +8,7 @@ module com.example.ms_3_of_cdbl {
 
     opens SaminaToma to javafx.fxml;
     exports SaminaToma;
+
+    opens Shawrob to javafx.fxml;
+    exports Shawrob;
 }
