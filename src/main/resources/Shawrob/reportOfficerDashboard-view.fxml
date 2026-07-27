@@ -11,8 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Shawrob.ReportOfficerDashboardController">
+<BorderPane fx:id="reportOfficerDashboardBP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Shawrob.ReportOfficerDashboardController">
    <top>
       <MenuBar BorderPane.alignment="CENTER">
         <menus>
@@ -37,35 +36,17 @@
    <left>
       <VBox prefHeight="409.0" prefWidth="127.0" style="-fx-background-color: grey;" BorderPane.alignment="CENTER">
          <children>
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="112.0" text="Daily Summary">
+            <Button mnemonicParsing="false" onAction="#dailySummaryOnAction" prefHeight="25.0" prefWidth="112.0" text="Daily Summary">
                <VBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="112.0" text="BO Activity">
+            <Button mnemonicParsing="false" onAction="#boActivityOnAction" prefHeight="25.0" prefWidth="112.0" text="BO Activity">
                <VBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="112.0" text="Settlement Report">
-               <VBox.margin>
-                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-               </VBox.margin>
-               <font>
-                  <Font size="11.0" />
-               </font>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="112.0" text="Holdings Report">
-               <VBox.margin>
-                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-               </VBox.margin>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="112.0" text="Corporate Action">
-               <VBox.margin>
-                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-               </VBox.margin>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="112.0" text="Dormant Accounts">
+            <Button mnemonicParsing="false" onAction="#settlementReportOnAction" prefHeight="25.0" prefWidth="112.0" text="Settlement Report">
                <VBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
@@ -73,17 +54,35 @@
                   <Font size="11.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="112.0" text="Audit Trail">
+            <Button mnemonicParsing="false" onAction="#holdingsReportOnAction" prefHeight="25.0" prefWidth="112.0" text="Holdings Report">
                <VBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="112.0" text="Schedule Report">
+            <Button mnemonicParsing="false" onAction="#corporateActionOnAction" prefHeight="25.0" prefWidth="112.0" text="Corporate Action">
                <VBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="112.0" text="Log out">
+            <Button mnemonicParsing="false" onAction="#dormantAccountsOnAction" prefHeight="25.0" prefWidth="112.0" text="Dormant Accounts">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#auditTrailOnAction" prefHeight="25.0" prefWidth="112.0" text="Audit Trail">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#scheduleReportOnAction" prefHeight="25.0" prefWidth="112.0" text="Schedule Report">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#logoutOnAction" prefHeight="25.0" prefWidth="112.0" text="Log out">
                <VBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin>

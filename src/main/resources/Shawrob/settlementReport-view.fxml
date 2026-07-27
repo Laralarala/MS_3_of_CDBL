@@ -7,20 +7,18 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Shawrob.SettlementReportController">
    <children>
       <Label layoutX="221.0" layoutY="14.0" text="Settlement Report" />
       <Label layoutX="14.0" layoutY="44.0" text="Generate Date:" />
-      <DatePicker layoutX="93.0" layoutY="40.0" />
-      <Button layoutX="306.0" layoutY="40.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="142.0" text="Generate" />
-      <TableView layoutX="17.0" layoutY="121.0" prefHeight="200.0" prefWidth="565.0">
+      <DatePicker fx:id="generateDateDP" layoutX="93.0" layoutY="40.0" />
+      <Button layoutX="306.0" layoutY="40.0" mnemonicParsing="false" onAction="#generateOnAction" prefHeight="25.0" prefWidth="142.0" text="Generate" />
+      <TableView fx:id="settlementReportTV" layoutX="17.0" layoutY="121.0" prefHeight="200.0" prefWidth="565.0">
         <columns>
-          <TableColumn prefWidth="118.0" text="Report ID" maxWidth="1180.0" minWidth="30.0"/>
-          <TableColumn prefWidth="177.99996948242188" text="Report Type" maxWidth="1779.9996948242188" minWidth="30.0"/>
-            <TableColumn prefWidth="130.66668701171875" text="Generate Date" maxWidth="1306.6668701171875"
-                         minWidth="30.0"/>
-            <TableColumn prefWidth="138.0" text="File Format" maxWidth="1380.0" minWidth="30.0"/>
+          <TableColumn fx:id="reportIDTC" maxWidth="1180.0" minWidth="30.0" prefWidth="118.0" text="Report ID" />
+          <TableColumn fx:id="reportTypeTC" maxWidth="1779.9996948242188" minWidth="30.0" prefWidth="177.99996948242188" text="Report Type" />
+            <TableColumn fx:id="dateTC" maxWidth="1306.6668701171875" minWidth="30.0" prefWidth="130.66668701171875" text="Generate Date" />
+            <TableColumn fx:id="fileFormatTC" maxWidth="1380.0" minWidth="30.0" prefWidth="138.0" text="File Format" />
         </columns>
       </TableView>
    </children>

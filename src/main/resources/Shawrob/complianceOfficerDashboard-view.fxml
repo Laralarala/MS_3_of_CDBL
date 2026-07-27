@@ -11,8 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Shawrob.ComplianceOfficerDashboardController">
+<BorderPane fx:id="complianceOfficerDashboardBP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Shawrob.ComplianceOfficerDashboardController">
    <top>
       <MenuBar BorderPane.alignment="CENTER">
         <menus>
@@ -37,7 +36,7 @@
    <left>
       <VBox prefHeight="409.0" prefWidth="127.0" style="-fx-background-color: grey;" BorderPane.alignment="CENTER">
          <children>
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="139.0" text="Suspicious Transactions">
+            <Button mnemonicParsing="false" onAction="#suspiciousTransactionsOnAction" prefHeight="25.0" prefWidth="139.0" text="Suspicious Transactions">
                <VBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
@@ -45,37 +44,37 @@
                   <Font size="9.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="139.0" text="Freeze Account">
+            <Button mnemonicParsing="false" onAction="#freezeAccountOnAction" prefHeight="25.0" prefWidth="139.0" text="Freeze Account">
                <VBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="139.0" text="Unfreeze Account">
+            <Button mnemonicParsing="false" onAction="#unfreezeAccountOnAction" prefHeight="25.0" prefWidth="139.0" text="Unfreeze Account">
                <VBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="139.0" text="KYC Review">
+            <Button mnemonicParsing="false" onAction="#kycReviewOnAction" prefHeight="25.0" prefWidth="139.0" text="KYC Review">
                <VBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="139.0" text="Submit STR">
+            <Button mnemonicParsing="false" onAction="#submitSTROnAction" prefHeight="25.0" prefWidth="139.0" text="Submit STR">
                <VBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="139.0" text="Trading Limit">
+            <Button mnemonicParsing="false" onAction="#tradingLimitOnAction" prefHeight="25.0" prefWidth="139.0" text="Trading Limit">
                <VBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="139.0" text="DP Audit">
+            <Button mnemonicParsing="false" onAction="#dpAuditOnAction" prefHeight="25.0" prefWidth="139.0" text="DP Audit">
                <VBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="139.0" text="Policy Management">
+            <Button mnemonicParsing="false" onAction="#policyManagementOnAction" prefHeight="25.0" prefWidth="139.0" text="Policy Management">
                <VBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
@@ -83,7 +82,7 @@
                   <Font size="11.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="139.0" text="Log out">
+            <Button mnemonicParsing="false" onAction="#logoutOnAction" prefHeight="25.0" prefWidth="139.0" text="Log out">
                <VBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
