@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SaminaToma.ReportMerchantBankExecutiveViewController">
+   <children>
+      <TextField fx:id="reportTypeTF" layoutX="48.0" layoutY="78.0" promptText="Report Type:" />
+      <DatePicker fx:id="reportDateDP" layoutX="48.0" layoutY="123.0" promptText="Report Date" />
+      <TextField fx:id="reportIDTF" layoutX="48.0" layoutY="33.0" promptText="Report ID:" />
+      <Button layoutX="338.0" layoutY="33.0" mnemonicParsing="false" onAction="#handleGenerateForReportOA" text="Generate" />
+      <Button layoutX="338.0" layoutY="78.0" mnemonicParsing="false" onAction="#handleExportForReportOA" text="Export PDF" />
+      <TableView fx:id="reportTV" layoutX="136.0" layoutY="173.0" prefHeight="200.0" prefWidth="313.0">
+        <columns>
+          <TableColumn fx:id="reportIDColUser7" prefWidth="99.20001220703125" text="Report ID" />
+          <TableColumn fx:id="reportTypeColUser7" prefWidth="117.5999755859375" text="Report Type" />
+            <TableColumn fx:id="reportDateColUser7" prefWidth="96.800048828125" text="Report Date" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

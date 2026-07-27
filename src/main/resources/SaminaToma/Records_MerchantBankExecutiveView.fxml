@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="447.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SaminaToma.RecordsMerchantBankExecutiveViewController">
+   <children>
+      <TextField fx:id="recordIDTF" layoutX="31.0" layoutY="26.0" promptText="Client ID:" />
+      <Button layoutX="379.0" layoutY="109.0" mnemonicParsing="false" onAction="#handleClearForRecordsOA" prefHeight="46.0" prefWidth="150.0" text="Clear" />
+      <Button layoutX="379.0" layoutY="52.0" mnemonicParsing="false" onAction="#handleUpdatedDataForRecordsOA" prefHeight="45.0" prefWidth="150.0" text="Update Data" />
+      <TextField layoutX="31.0" layoutY="62.0" promptText="Client Name:" />
+      <TextField layoutX="31.0" layoutY="132.0" promptText="Account Number:" />
+      <DatePicker layoutX="30.0" layoutY="175.0" promptText="Date of Birth" />
+      <TableView fx:id="recordsTV" layoutX="78.0" layoutY="233.0" prefHeight="200.0" prefWidth="411.0">
+        <columns>
+          <TableColumn fx:id="clientIDColUser7" prefWidth="85.60003662109375" text="Client ID" />
+          <TableColumn fx:id="clientNameColUser7" prefWidth="107.199951171875" text="Client Name" />
+            <TableColumn fx:id="accountNumberColUser7" prefWidth="116.7999267578125" text="Account Number" />
+            <TableColumn fx:id="dateOfBirthColUser7" prefWidth="96.800048828125" text="Date of Birth" />
+        </columns>
+      </TableView>
+      <TextField fx:id="emailTF" layoutX="31.0" layoutY="96.0" promptText="Email" />
+   </children>
+</AnchorPane>
