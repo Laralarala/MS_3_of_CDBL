@@ -7,6 +7,7 @@ import javafx.scene.control.TableView;
 
 public class SettlementReportController
 {
+
     @javafx.fxml.FXML
     private TableView settlementReportTV;
     @javafx.fxml.FXML

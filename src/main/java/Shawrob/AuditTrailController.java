@@ -7,6 +7,7 @@ import javafx.scene.control.TableView;
 
 public class AuditTrailController
 {
+
     @javafx.fxml.FXML
     private TableView auditTrailTV;
     @javafx.fxml.FXML
@@ -16,9 +17,9 @@ public class AuditTrailController
     @javafx.fxml.FXML
     private TableColumn reportTypeTC;
     @javafx.fxml.FXML
-    private TableColumn fileFormatTC;
-    @javafx.fxml.FXML
     private TableColumn dateTC;
+    @javafx.fxml.FXML
+    private TableColumn fileFormatTC;
 
     @javafx.fxml.FXML
     public void initialize() {

@@ -1,19 +1,17 @@
 package Shawrob;
 
 import javafx.event.ActionEvent;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
-public class HoldingsReportController
+public class UnfreezeAccountController
 {
-
     @javafx.fxml.FXML
-    private TextField holderNameTF;
-    @javafx.fxml.FXML
-    private TextField totalHoldingTF;
+    private Label holderNameLabel;
     @javafx.fxml.FXML
     private TextField accountNoTF;
     @javafx.fxml.FXML
-    private TextField statusTF;
+    private Label statusLabel;
 
     @javafx.fxml.FXML
     public void initialize() {
@@ -24,6 +22,6 @@ public class HoldingsReportController
     }
 
     @javafx.fxml.FXML
-    public void exportOnAction(ActionEvent actionEvent) {
+    public void unfreezeOnAction(ActionEvent actionEvent) {
     }
 }
