@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SaminaToma.AccountCustodyOfficerViewController">
+   <children>
+      <TextField fx:id="custodyAccIDTF" layoutX="47.0" layoutY="14.0" promptText="Account ID:" />
+      <TextField fx:id="custodyAccNameTF" layoutX="47.0" layoutY="47.0" promptText="Account Name:" />
+      <TextField fx:id="custodyHolderNameTF" layoutX="47.0" layoutY="81.0" promptText="Holder Name:" />
+      <TextField fx:id="custodyBalanceTF" layoutX="47.0" layoutY="116.0" promptText="Balance:" />
+      <ComboBox fx:id="custodyStatusCmB" layoutX="46.0" layoutY="150.0" prefWidth="150.0" promptText="Status" />
+      <Button layoutX="397.0" layoutY="27.0" mnemonicParsing="false" onAction="#custodyHandleSearchForAccOA" text="Search" />
+      <Button layoutX="398.0" layoutY="68.0" mnemonicParsing="false" onAction="#custodyHandleCreateForAccOA" text="Create" />
+      <Button layoutX="396.0" layoutY="103.0" mnemonicParsing="false" onAction="#custodyHandleUpdateForAccOA" text="Update" />
+      <Button layoutX="398.0" layoutY="137.0" mnemonicParsing="false" onAction="#custodyHandleDeleteForAccOA" text="Delete" />
+      <TableView fx:id="custodyAccTV" layoutX="106.0" layoutY="186.0" prefHeight="200.0" prefWidth="370.0">
+        <columns>
+          <TableColumn fx:id="custodyAccIDCol" prefWidth="84.79998779296875" text="Account ID" />
+          <TableColumn fx:id="custodyAccNameCol" prefWidth="106.4000244140625" text="Account Name" />
+            <TableColumn fx:id="custodyHolderNameCol" prefWidth="100.79998779296875" text="Holder Name" />
+            <TableColumn fx:id="custodyStatusCol" prefWidth="78.40008544921875" text="Status" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="451.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SaminaToma.TransactionCustodyOfficerViewController">
+   <children>
+      <TextField fx:id="custodyTransactionIDTF" layoutX="31.0" layoutY="14.0" promptText="Transaction ID" />
+      <TextField fx:id="custodyAccNoTF" layoutX="31.0" layoutY="46.0" promptText="Account No" />
+      <TextField fx:id="custodyQuantityTF" layoutX="31.0" layoutY="80.0" promptText="Quantity" />
+      <TextField fx:id="custodyAmountTF" layoutX="31.0" layoutY="113.0" promptText="Amount" />
+      <ComboBox fx:id="custodyTransactionTypeCmB" layoutX="31.0" layoutY="147.0" prefWidth="150.0" promptText="Transaction Type" />
+      <DatePicker fx:id="custodyTransactionDateDP" layoutX="18.0" layoutY="187.0" promptText="Transaction Date" />
+      <Button layoutX="409.0" layoutY="27.0" mnemonicParsing="false" onAction="#custodyHandleSearchForTransactionOA" prefHeight="35.0" prefWidth="62.0" text="Search" />
+      <Button layoutX="409.0" layoutY="80.0" mnemonicParsing="false" onAction="#custodyHandleUpdateForTransactionOA" prefHeight="35.0" prefWidth="62.0" text="Update" />
+      <Button layoutX="409.0" layoutY="173.0" mnemonicParsing="false" onAction="#custodyHandleClearForTransactionOA" prefHeight="35.0" prefWidth="62.0" text="Clear" />
+      <Button layoutX="409.0" layoutY="129.0" mnemonicParsing="false" onAction="#custodyHandleCancleForTransactionOA" prefHeight="35.0" prefWidth="62.0" text="Cancle" />
+      <TableView fx:id="custodyTransactionTV" layoutX="47.0" layoutY="237.0" prefHeight="200.0" prefWidth="505.0">
+        <columns>
+          <TableColumn fx:id="custodyTransactionIDCol" prefWidth="104.800048828125" text="Transaction ID" />
+          <TableColumn fx:id="custodyQuantityCol" prefWidth="82.39996337890625" text="Quantity" />
+            <TableColumn fx:id="custodyAmountCol" prefWidth="76.79998779296875" text="Amount" />
+            <TableColumn fx:id="custodyTransactionTypeCol" prefWidth="116.00006103515625" text="Transaction Type" />
+            <TableColumn fx:id="custodyTransactionDateCol" prefWidth="129.59991455078125" text="Transaction Date" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

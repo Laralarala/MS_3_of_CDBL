@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="434.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SaminaToma.RecordsCustodyOfficerViewController">
+   <children>
+      <TextField fx:id="custodyClientIDTF" layoutX="39.0" layoutY="25.0" promptText="Client ID:" />
+      <TextField fx:id="custodyClientNameTF" layoutX="39.0" layoutY="61.0" promptText="Client Name:" />
+      <TextField fx:id="custodyEmailTF" layoutX="40.0" layoutY="98.0" promptText="Email" />
+      <TextField fx:id="custodyAccNumTF" layoutX="40.0" layoutY="132.0" promptText="Account Number" />
+      <DatePicker fx:id="custodyDateOfBirthDP" layoutX="33.0" layoutY="171.0" promptText="Date Of Birth" />
+      <Button layoutX="382.0" layoutY="43.0" mnemonicParsing="false" onAction="#custodyHandleUpdatedDataForRecordsOA" prefHeight="44.0" prefWidth="83.0" text="Update Data" />
+      <Button layoutX="382.0" layoutY="123.0" mnemonicParsing="false" onAction="#custodyHandleClearForRecordsOA" prefHeight="44.0" prefWidth="83.0" text="Clear" />
+      <TableView fx:id="custodyRecordsTV" layoutX="87.0" layoutY="217.0" prefHeight="200.0" prefWidth="388.0">
+        <columns>
+          <TableColumn fx:id="custodyClientIDCol" prefWidth="75.0" text="Client ID" />
+          <TableColumn fx:id="custodyClientNameCol" prefWidth="98.4000244140625" text="Client Name" />
+            <TableColumn fx:id="custodyAccNumCol" prefWidth="115.199951171875" text="Account Number" />
+            <TableColumn fx:id="custodyDateOfBirthCol" prefWidth="96.79998779296875" text="Date Of Birth" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
