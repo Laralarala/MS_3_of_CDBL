@@ -1,19 +1,20 @@
 package Shawrob;
 
 import javafx.event.ActionEvent;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
-public class HoldingsReportController
+public class SubmitSTRController
 {
 
     @javafx.fxml.FXML
-    private TextField holderNameTF;
+    private Label securityNameLabel;
     @javafx.fxml.FXML
-    private TextField totalHoldingTF;
+    private TextField transactionIDTF;
     @javafx.fxml.FXML
-    private TextField accountNoTF;
+    private Label quantityLabel;
     @javafx.fxml.FXML
-    private TextField statusTF;
+    private Label priceLabel;
 
     @javafx.fxml.FXML
     public void initialize() {
@@ -24,6 +25,6 @@ public class HoldingsReportController
     }
 
     @javafx.fxml.FXML
-    public void exportOnAction(ActionEvent actionEvent) {
+    public void submitOnAction(ActionEvent actionEvent) {
     }
 }

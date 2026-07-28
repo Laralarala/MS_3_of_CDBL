@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 
 public class DailySummaryController
 {
@@ -18,7 +19,11 @@ public class DailySummaryController
     @javafx.fxml.FXML
     private TableColumn dateTC;
     @javafx.fxml.FXML
-    private TableColumn fileFormatTC;
+    private TextField reportidTF;
+    @javafx.fxml.FXML
+    private TableColumn statusTC;
+    @javafx.fxml.FXML
+    private TextField reporttypeTF;
 
     @javafx.fxml.FXML
     public void initialize() {

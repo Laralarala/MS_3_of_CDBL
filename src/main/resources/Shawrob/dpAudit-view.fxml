@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Shawrob.DPAuditController">
+   <children>
+      <Label layoutX="237.0" layoutY="14.0" text="DP Audit" />
+      <TextField fx:id="accountNoTF" layoutX="36.0" layoutY="50.0" promptText="Account No" />
+      <Button layoutX="284.0" layoutY="50.0" mnemonicParsing="false" onAction="#searchOnAction" prefHeight="25.0" prefWidth="175.0" text="Search" />
+      <Label layoutX="36.0" layoutY="103.0" text="Holder Name:" />
+      <Label layoutX="36.0" layoutY="128.0" text="Total Holding:" />
+      <Label fx:id="holderNameLabel" layoutX="111.0" layoutY="103.0" prefHeight="17.0" prefWidth="161.0" />
+      <Label fx:id="totalHoldingLabel" layoutX="110.0" layoutY="128.0" prefHeight="17.0" prefWidth="149.0" />
+      <Button layoutX="163.0" layoutY="174.0" mnemonicParsing="false" onAction="#auditOnAction" prefHeight="25.0" prefWidth="175.0" text="Audit" />
+   </children>
+</AnchorPane>
