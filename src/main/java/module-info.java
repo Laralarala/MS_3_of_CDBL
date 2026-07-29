@@ -14,4 +14,7 @@ module com.example.ms_3_of_cdbl {
 
     opens MarsiadRahman to javafx.fxml;
     exports MarsiadRahman;
+
+    opens RafadinIslam_2111525 to javafx.fxml;
+    exports RafadinIslam_2111525;
 }
