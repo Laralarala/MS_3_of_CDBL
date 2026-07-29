@@ -15,7 +15,7 @@
       <Button layoutX="383.0" layoutY="30.0" mnemonicParsing="false" onAction="#handleVerifyForComplianceOA" text="Verify" />
       <Button layoutX="383.0" layoutY="70.0" mnemonicParsing="false" onAction="#handleValidateForComplianceOA" text="Validate" />
       <Button layoutX="383.0" layoutY="110.0" mnemonicParsing="false" onAction="#handleClearForComplianceOA" text="Clear" />
-      <TableView fx:id="complianceTV" layoutX="112.0" layoutY="167.0" prefHeight="200.0" prefWidth="270.0">
+      <TableView fx:id="complianceTV" layoutX="142.0" layoutY="180.0" prefHeight="200.0" prefWidth="270.0">
         <columns>
           <TableColumn fx:id="compIDColUser7" prefWidth="108.800048828125" text="Compliance ID:" />
           <TableColumn fx:id="accNoColUser7" prefWidth="86.39996337890625" text="Account No:" />

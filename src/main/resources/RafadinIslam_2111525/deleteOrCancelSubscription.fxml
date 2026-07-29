@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="539.0" prefWidth="774.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RafadinIslam_2111525.DeleteOrCancelSubscription">
+   <children>
+      <TableView fx:id="deleteOrCancelSubscriptionTableView" layoutY="339.0" prefHeight="200.0" prefWidth="774.0">
+        <columns>
+          <TableColumn fx:id="accountNameTableCol" prefWidth="272.0" text="Account Name" />
+          <TableColumn fx:id="planTableCol" prefWidth="256.0" text="Plan" />
+            <TableColumn fx:id="statusTableCol" prefWidth="242.0" text="Status" />
+        </columns>
+      </TableView>
+      <Button layoutX="63.0" layoutY="65.0" mnemonicParsing="false" onAction="#deleteSubscriptionButtonOnAction" prefHeight="50.0" prefWidth="296.0" text="Delete Subscription" />
+   </children>
+</AnchorPane>
