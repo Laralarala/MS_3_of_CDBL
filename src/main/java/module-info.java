@@ -1,6 +1,8 @@
 module com.example.ms_3_of_cdbl {
     requires javafx.controls;
     requires javafx.fxml;
+    requires com.example.ms_3_of_cdbl;
+    requires javafx.graphics;
 
 
     opens com.example.ms_3_of_cdbl to javafx.fxml;
