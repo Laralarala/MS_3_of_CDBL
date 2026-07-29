@@ -1,5 +1,11 @@
 package MarsiadRahman;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
+
 public class HandleFailedSettlementviewController
 {
     @javafx.fxml.FXML
