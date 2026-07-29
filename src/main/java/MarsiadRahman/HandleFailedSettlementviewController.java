@@ -5,11 +5,17 @@ public class HandleFailedSettlementviewController
     @javafx.fxml.FXML
     private TextField txtTransactionID;
     @javafx.fxml.FXML
+    private Button btnBack;
+    @javafx.fxml.FXML
     private TextArea txtAFailureReason;
+    @javafx.fxml.FXML
+    private Button btnRecordFailure;
     @javafx.fxml.FXML
     private TextArea txtAActionTaken;
     @javafx.fxml.FXML
     private ComboBox cmbSettlementStatus;
+    @javafx.fxml.FXML
+    private Button btnClear;
 
     @javafx.fxml.FXML
     public void initialize() {

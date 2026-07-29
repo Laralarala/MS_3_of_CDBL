@@ -1,6 +1,6 @@
 package MarsiadRahman;
 
-public class WithdrawSecuritiesViewController
+public class TransferSecuritiesviewController
 {
     @javafx.fxml.FXML
     public void initialize() {

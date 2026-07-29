@@ -3,6 +3,8 @@ package MarsiadRahman;
 public class GenerateStatementviewController
 {
     @javafx.fxml.FXML
+    private Button btnBack;
+    @javafx.fxml.FXML
     private TextField txtBoAccountNo;
     @javafx.fxml.FXML
     private ComboBox cmbStatementOption;
@@ -10,6 +12,10 @@ public class GenerateStatementviewController
     private DatePicker dpStartDate;
     @javafx.fxml.FXML
     private TextArea txtAStatementOutput;
+    @javafx.fxml.FXML
+    private Button btnGenerateStatement;
+    @javafx.fxml.FXML
+    private Button btnClear;
     @javafx.fxml.FXML
     private DatePicker dpEndDate;
 

@@ -7,14 +7,15 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
+
 <AnchorPane prefHeight="596.0" prefWidth="808.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MarsiadRahman.ViewPortfolioviewController">
    <children>
       <TextField fx:id="txtBoAccountNo" layoutX="308.0" layoutY="67.0" />
       <ComboBox fx:id="cmbPortfolioOption" layoutX="87.0" layoutY="205.0" prefHeight="70.0" prefWidth="150.0" />
       <TextArea fx:id="txtAPortfolioDetails" layoutX="237.0" layoutY="298.0" prefHeight="200.0" prefWidth="200.0" />
-      <Button layoutX="589.0" layoutY="322.0" mnemonicParsing="false" onAction="#viewportfolioOA" text="View portfolio" />
-      <Button layoutX="525.0" layoutY="398.0" mnemonicParsing="false" onAction="#clearOA" text="Clear" />
-      <Button layoutX="670.0" layoutY="411.0" mnemonicParsing="false" onAction="#backOA" text="Back" />
+      <Button fx:id="btnViewportfolio" layoutX="589.0" layoutY="322.0" mnemonicParsing="false" onAction="#viewportfolioOA" text="View portfolio" />
+      <Button fx:id="btnClear" layoutX="525.0" layoutY="398.0" mnemonicParsing="false" onAction="#clearOA" text="Clear" />
+      <Button fx:id="btnBack" layoutX="670.0" layoutY="411.0" mnemonicParsing="false" onAction="#backOA" text="Back" />
       <Label fx:id="IblStatusMessage" layoutX="504.0" layoutY="524.0" text="Status message" />
       <Label layoutX="355.0" layoutY="39.0" text="Bo Account No" />
       <Label layoutX="148.0" layoutY="168.0" text="Portfolio Option" />

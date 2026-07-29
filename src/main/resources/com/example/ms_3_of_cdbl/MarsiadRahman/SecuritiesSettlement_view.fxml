@@ -7,6 +7,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
+
 <AnchorPane prefHeight="591.0" prefWidth="798.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MarsiadRahman.SecuritiesSettlementview">
    <children>
       <TextField fx:id="txtSettlementRequestId" layoutX="92.0" layoutY="53.0" />
@@ -15,9 +16,9 @@
       <ComboBox fx:id="cmbSettlementstatus" layoutX="309.0" layoutY="229.0" prefWidth="150.0" />
       <TextArea layoutX="47.0" layoutY="317.0" prefHeight="200.0" prefWidth="200.0" />
       <Label fx:id="IblStatusMessage" layoutX="344.0" layoutY="386.0" text="Status Message" />
-      <Button layoutX="332.0" layoutY="517.0" mnemonicParsing="false" onAction="#clearOA" text="Clear" />
-      <Button layoutX="717.0" layoutY="530.0" mnemonicParsing="false" onAction="#backOA" text="Back" />
-      <Button layoutX="525.0" layoutY="470.0" mnemonicParsing="false" onAction="#completeOA" text="Complete" />
+      <Button fx:id="btnClear" layoutX="332.0" layoutY="517.0" mnemonicParsing="false" onAction="#clearOA" text="Clear" />
+      <Button fx:id="btnBack" layoutX="717.0" layoutY="530.0" mnemonicParsing="false" onAction="#backOA" text="Back" />
+      <Button fx:id="btnComplete" layoutX="525.0" layoutY="470.0" mnemonicParsing="false" onAction="#completeOA" text="Complete" />
       <Label layoutX="108.0" layoutY="28.0" text="Settlement Request Id" />
       <Label layoutX="109.0" layoutY="108.0" text="Security ID" />
       <Label layoutX="109.0" layoutY="192.0" text="Quantity" />

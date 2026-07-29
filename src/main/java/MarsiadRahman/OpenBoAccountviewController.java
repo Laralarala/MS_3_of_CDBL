@@ -7,21 +7,27 @@ public class OpenBoAccountviewController
     @javafx.fxml.FXML
     private TextArea txtARemarks;
     @javafx.fxml.FXML
-    private TextField txtBoAccountNo;
+    private Button btnBack;
     @javafx.fxml.FXML
     private TextField txtHolderId;
-    @javafx.fxml.FXML
-    private ComboBox cmbAccountType;
-    @javafx.fxml.FXML
-    private TextField txtAddress;
     @javafx.fxml.FXML
     private DatePicker dpBirthDate;
     @javafx.fxml.FXML
     private TextField txtEmail;
     @javafx.fxml.FXML
-    private TextField txtNid;
+    private Button btnCreate;
     @javafx.fxml.FXML
     private TextField txtHolderName;
+    @javafx.fxml.FXML
+    private Button btnClear;
+    @javafx.fxml.FXML
+    private TextField txtBoAccountNo;
+    @javafx.fxml.FXML
+    private ComboBox cmbAccountType;
+    @javafx.fxml.FXML
+    private TextField txtAddress;
+    @javafx.fxml.FXML
+    private TextField txtNid;
 
     @javafx.fxml.FXML
     public void initialize() {

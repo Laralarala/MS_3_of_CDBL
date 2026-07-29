@@ -7,6 +7,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
+
 <AnchorPane prefHeight="590.0" prefWidth="794.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MarsiadRahman.ValidateTradeDataviewController">
    <children>
       <TextField fx:id="txtTradeID" layoutX="48.0" layoutY="75.0" />
@@ -18,10 +19,10 @@
       <Label layoutX="418.0" layoutY="204.0" text="Trade Status" />
       <Label layoutX="155.0" layoutY="178.0" text="Trade Details" />
       <Label fx:id="IblValidationResult" layoutX="130.0" layoutY="518.0" text="Validation Result" />
-      <Button layoutX="422.0" layoutY="344.0" mnemonicParsing="false" onAction="#validateOA" text="Validate" />
-      <Button layoutX="361.0" layoutY="425.0" mnemonicParsing="false" onAction="#verifyOA" text="Verify" />
-      <Button layoutX="496.0" layoutY="438.0" mnemonicParsing="false" onAction="#approveOA" text="Approve" />
-      <Button layoutX="326.0" layoutY="523.0" mnemonicParsing="false" onAction="#clearOA" text="Clear" />
-      <Button layoutX="606.0" layoutY="523.0" mnemonicParsing="false" onAction="#backOA" text="Back" />
+      <Button fx:id="btnValidate" layoutX="422.0" layoutY="344.0" mnemonicParsing="false" onAction="#validateOA" text="Validate" />
+      <Button fx:id="btnVerify" layoutX="361.0" layoutY="425.0" mnemonicParsing="false" onAction="#verifyOA" text="Verify" />
+      <Button fx:id="btnApprove" layoutX="496.0" layoutY="438.0" mnemonicParsing="false" onAction="#approveOA" text="Approve" />
+      <Button fx:id="btnClear" layoutX="326.0" layoutY="523.0" mnemonicParsing="false" onAction="#clearOA" text="Clear" />
+      <Button fx:id="btnBack" layoutX="606.0" layoutY="523.0" mnemonicParsing="false" onAction="#backOA" text="Back" />
    </children>
 </AnchorPane>

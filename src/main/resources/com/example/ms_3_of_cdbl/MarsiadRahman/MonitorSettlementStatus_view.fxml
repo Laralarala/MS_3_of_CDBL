@@ -8,16 +8,17 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
+
 <AnchorPane prefHeight="532.0" prefWidth="756.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MarsiadRahman.MonitorSettlementStatusviewController">
    <children>
       <TextField fx:id="txtSettlementBatchID" layoutX="139.0" layoutY="75.0" />
       <ComboBox fx:id="cmbSettlementStatus" layoutX="348.0" layoutY="159.0" prefWidth="150.0" />
       <DatePicker fx:id="dpLastUpdated" layoutX="99.0" layoutY="268.0" />
       <TextArea fx:id="txtAStatusDetails" layoutX="358.0" layoutY="255.0" prefHeight="200.0" prefWidth="200.0" />
-      <Button layoutX="640.0" layoutY="32.0" mnemonicParsing="false" onAction="#searchOA" text="Search" />
-      <Button layoutX="623.0" layoutY="268.0" mnemonicParsing="false" onAction="#updatestatusOA" text="Update Status" />
-      <Button layoutX="55.0" layoutY="469.0" mnemonicParsing="false" onAction="#clearOA" text="Clear" />
-      <Button layoutX="615.0" layoutY="422.0" mnemonicParsing="false" onAction="#backOA" text="Back" />
+      <Button fx:id="btnSearch" layoutX="640.0" layoutY="32.0" mnemonicParsing="false" onAction="#searchOA" text="Search" />
+      <Button fx:id="btnUpdateStatus" layoutX="623.0" layoutY="268.0" mnemonicParsing="false" onAction="#updatestatusOA" text="Update Status" />
+      <Button fx:id="btnClear" layoutX="55.0" layoutY="469.0" mnemonicParsing="false" onAction="#clearOA" text="Clear" />
+      <Button fx:id="btnBack" layoutX="615.0" layoutY="422.0" mnemonicParsing="false" onAction="#backOA" text="Back" />
       <Label layoutX="167.0" layoutY="45.0" text="Settlement Batch ID" />
       <Label layoutX="358.0" layoutY="133.0" text="Settlement Status" />
       <Label layoutX="153.0" layoutY="238.0" text="Last Updated" />

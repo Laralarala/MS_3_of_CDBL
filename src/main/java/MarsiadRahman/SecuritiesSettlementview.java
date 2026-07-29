@@ -5,6 +5,8 @@ public class SecuritiesSettlementview
     @javafx.fxml.FXML
     private Label IblStatusMessage;
     @javafx.fxml.FXML
+    private Button btnBack;
+    @javafx.fxml.FXML
     private TextField txtSecurityID;
     @javafx.fxml.FXML
     private ComboBox cmbSettlementstatus;
@@ -12,6 +14,10 @@ public class SecuritiesSettlementview
     private TextField txtSettlementRequestId;
     @javafx.fxml.FXML
     private TextField txtQuantity;
+    @javafx.fxml.FXML
+    private Button btnClear;
+    @javafx.fxml.FXML
+    private Button btnComplete;
 
     @javafx.fxml.FXML
     public void initialize() {

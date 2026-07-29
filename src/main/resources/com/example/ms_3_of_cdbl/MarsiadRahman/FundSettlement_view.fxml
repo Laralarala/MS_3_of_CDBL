@@ -1,29 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ComboBox?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextArea?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.AnchorPane?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="MarsiadRahman.FundSettlementviewController"
+            prefHeight="400.0" prefWidth="600.0">
 
-<AnchorPane prefHeight="556.0" prefWidth="756.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MarsiadRahman.FundSettlementviewController">
-   <children>
-      <TextField fx:id="txtPaymentId" layoutX="40.0" layoutY="67.0" />
-      <TextField fx:id="txtFundAmount" layoutX="34.0" layoutY="144.0" />
-      <TextField fx:id="txtBankName" layoutX="35.0" layoutY="224.0" />
-      <ComboBox fx:id="cmbPaymentStatus" layoutX="185.0" layoutY="322.0" prefWidth="150.0" />
-      <TextArea fx:id="txtAFundDetails" layoutX="315.0" layoutY="70.0" prefHeight="200.0" prefWidth="200.0" />
-      <Label fx:id="IblStatusMessage" layoutX="142.0" layoutY="454.0" text="Status Message" />
-      <Button layoutX="617.0" layoutY="322.0" mnemonicParsing="false" onAction="#transferOA" text="Transfer" />
-      <Button layoutX="603.0" layoutY="411.0" mnemonicParsing="false" onAction="#completeOA" text="Complete" />
-      <Button layoutX="289.0" layoutY="480.0" mnemonicParsing="false" onAction="#clearOA" text="Clear" />
-      <Button layoutX="617.0" layoutY="493.0" mnemonicParsing="false" onAction="#backOA" text="Back" />
-      <Label layoutX="87.0" layoutY="39.0" text="Payment Id " />
-      <Label layoutX="95.0" layoutY="116.0" text="Fund Amount " />
-      <Label layoutX="101.0" layoutY="199.0" text="Bank Name" />
-      <Label layoutX="387.0" layoutY="39.0" text="Fund Details" />
-      <Label layoutX="231.0" layoutY="294.0" text="Payment Status" />
-   </children>
 </AnchorPane>
