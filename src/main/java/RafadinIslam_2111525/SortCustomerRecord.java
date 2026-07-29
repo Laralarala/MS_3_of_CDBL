@@ -1,5 +1,9 @@
 package RafadinIslam_2111525;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+
 public class SortCustomerRecord
 {
     @javafx.fxml.FXML

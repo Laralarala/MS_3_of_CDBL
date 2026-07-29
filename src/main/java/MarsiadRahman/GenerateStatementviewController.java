@@ -1,5 +1,8 @@
 package MarsiadRahman;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.*;
+
 public class GenerateStatementviewController
 {
     @javafx.fxml.FXML
