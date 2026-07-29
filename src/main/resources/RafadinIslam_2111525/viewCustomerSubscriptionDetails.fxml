@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="556.0" prefWidth="856.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RafadinIslam_2111525.ViewCustomerSubscriptionDetails">
+   <children>
+      <Button layoutX="73.0" layoutY="59.0" mnemonicParsing="false" onAction="#viewSubscriptionOnActionButton" prefHeight="72.0" prefWidth="215.0" text="View Subscription" />
+      <TableView fx:id="viewSubscriptionTableView" layoutY="356.0" prefHeight="200.0" prefWidth="856.0">
+        <columns>
+          <TableColumn fx:id="AccountNameTableCol" prefWidth="285.0" text="Account Name" />
+          <TableColumn fx:id="PlanTableCol" prefWidth="318.0" text="Plan" />
+            <TableColumn fx:id="StatusTableCol" prefWidth="251.0" text="Status" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
