@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="555.0" prefWidth="727.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MarsiadRahman.ComplianceReviewviewController">
+   <children>
+      <ComboBox fx:id="cmbComplianceType" layoutX="120.0" layoutY="80.0" prefWidth="150.0" />
+      <DatePicker fx:id="dpAuditDate" layoutX="71.0" layoutY="171.0" />
+      <TextArea fx:id="txtAAuditCriteria" layoutX="71.0" layoutY="278.0" prefHeight="200.0" prefWidth="200.0" />
+      <TextArea fx:id="txtAComplianceReport" layoutX="338.0" layoutY="284.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button layoutX="598.0" layoutY="284.0" mnemonicParsing="false" onAction="#reviewOA" text="Review" />
+      <Button layoutX="131.0" layoutY="499.0" mnemonicParsing="false" onAction="#clearOA" text="Clear" />
+      <Button layoutX="611.0" layoutY="486.0" mnemonicParsing="false" onAction="#clearOA" text="Back" />
+      <Label layoutX="131.0" layoutY="46.0" text="Compliance Type" />
+      <Label layoutX="139.0" layoutY="140.0" text="Audit Date" />
+      <Label layoutX="139.0" layoutY="248.0" text="Audit criteria" />
+      <Label layoutX="377.0" layoutY="256.0" text="Compliance Report" />
+   </children>
+</AnchorPane>

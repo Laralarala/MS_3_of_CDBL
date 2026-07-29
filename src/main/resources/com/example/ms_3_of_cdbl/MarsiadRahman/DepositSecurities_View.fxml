@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="570.0" prefWidth="810.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MarsiadRahman.DepositSecuritiesViewController">
+   <children>
+      <TextField fx:id="txtBoAccountNo" layoutX="40.0" layoutY="54.0" />
+      <TextField fx:id="textSecurityId" layoutX="229.0" layoutY="54.0" />
+      <TextField fx:id="txtSecurityName" layoutX="405.0" layoutY="54.0" />
+      <TextField fx:id="txtQuantity" layoutX="41.0" layoutY="132.0" />
+      <TextField fx:id="txtIssue" layoutX="246.0" layoutY="132.0" />
+      <TextField fx:id="txtMarketValue" layoutX="445.0" layoutY="132.0" />
+      <Label layoutX="257.0" layoutY="24.0" text="Security ID" />
+      <Label layoutX="97.0" layoutY="33.0" text="Bo Account No" />
+      <Label layoutX="451.0" layoutY="24.0" text="Security Name" />
+      <Label layoutX="83.0" layoutY="104.0" text="Quantity" />
+      <Label layoutX="301.0" layoutY="104.0" text="Issue" />
+      <Label layoutX="480.0" layoutY="104.0" text="Market Value" />
+      <DatePicker fx:id="dpDepositDate" layoutX="148.0" layoutY="217.0" />
+      <Label layoutX="198.0" layoutY="185.0" text="Deposite Date" />
+      <Button layoutX="80.0" layoutY="285.0" mnemonicParsing="false" onAction="#submitDepositeRequestOA" text="Submit Deposit Request" />
+      <Button layoutX="210.0" layoutY="356.0" mnemonicParsing="false" onAction="#goBackOA" text="Back" />
+      <Button layoutX="370.0" layoutY="298.0" mnemonicParsing="false" onAction="#clearformOA" text="Clear" />
+      <Label fx:id="IblStatus" layoutX="382.0" layoutY="408.0" text="Status Messsage" />
+   </children>
+</AnchorPane>

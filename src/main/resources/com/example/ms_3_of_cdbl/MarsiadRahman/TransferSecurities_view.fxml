@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="550.0" prefWidth="763.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MarsiadRahman.TransferSecuritiesviewControlller">
+   <children>
+      <TextField fx:id="txtsenderBoAccountNo" layoutX="310.0" layoutY="42.0" />
+      <TextField fx:id="txtSecurityId" layoutX="36.0" layoutY="100.0" />
+      <TextField fx:id="txtQuantity" layoutX="36.0" layoutY="313.0" />
+      <TextField fx:id="txtTransferNote" layoutX="36.0" layoutY="389.0" />
+      <TextField fx:id="txtSecurityName" layoutX="36.0" layoutY="212.0" />
+      <TextField fx:id="txtReceiverBoId" layoutX="307.0" layoutY="113.0" prefHeight="26.0" prefWidth="150.0" />
+      <DatePicker fx:id="dpTransferDate" layoutX="282.0" layoutY="263.0" />
+      <Button layoutX="399.0" layoutY="345.0" mnemonicParsing="false" onAction="#transferSecuritiesOA" text="Transfer Securities" />
+      <Button layoutX="276.0" layoutY="402.0" mnemonicParsing="false" onAction="#clearOA" text="Clear" />
+      <Button layoutX="510.0" layoutY="415.0" mnemonicParsing="false" onAction="#backOA" text="Back" />
+      <Label fx:id="IblStatusMessage" layoutX="385.0" layoutY="479.0" text="Status Message" />
+      <Label layoutX="97.0" layoutY="68.0" text="Security ID" />
+      <Label layoutX="328.0" layoutY="14.0" prefHeight="18.0" prefWidth="131.0" text="Sender Bo Accoun No" />
+      <Label layoutX="322.0" layoutY="92.0" text="Receiver Bo ID" />
+      <Label layoutX="342.0" layoutY="229.0" text="Transfer Date" />
+      <Label layoutX="83.0" layoutY="181.0" text="Security Name" />
+      <Label layoutX="83.0" layoutY="280.0" text="Quantity" />
+      <Label layoutX="97.0" layoutY="362.0" text="Transfer Note" />
+   </children>
+</AnchorPane>
