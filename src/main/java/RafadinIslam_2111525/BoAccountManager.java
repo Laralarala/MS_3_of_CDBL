@@ -15,21 +15,34 @@ public class BoAccountManager
     }
 
     @javafx.fxml.FXML
-    public void searchCustomerByNameOrPlanButtonOnAction(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("searchCustomerByPlanOrName.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        Stage stage = new Stage();
-        stage.setScene(scene);
-        stage.show();
+    public void searchCustomerByNameOrPlanButtonOnAction(ActionEvent actionEvent)  {
+
+        try {
+
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/com/example/ms_3_of_cdbl/RafadinIslam_2111525/searchForSubscriptionByCustomerNameorPlan.fxml"));
+            Scene scene = new Scene(fxmlLoader.load());
+            Stage stage = new Stage();
+            stage.setScene(scene);
+            stage.show();
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     @javafx.fxml.FXML
-    public void updateCustomerDetailsButtonOnAction(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("updateCustomerDetails.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        Stage stage = new Stage();
-        stage.setScene(scene);
-        stage.show();
+    public void updateCustomerDetailsButtonOnAction(ActionEvent actionEvent)  {
+        try {
+
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/updateCustomerDetails.fxml"));
+            Scene scene = new Scene(fxmlLoader.load());
+            Stage stage = new Stage();
+            stage.setScene(scene);
+            stage.show();
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     @javafx.fxml.FXML
@@ -80,7 +93,7 @@ public class BoAccountManager
 
     @javafx.fxml.FXML
     public void addNewCustomerButtonOnAction(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("addNewCustomer.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/addNewCustomer.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = new Stage();
         stage.setScene(scene);
