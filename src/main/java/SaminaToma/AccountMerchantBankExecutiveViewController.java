@@ -15,19 +15,19 @@ public class AccountMerchantBankExecutiveViewController
     @javafx.fxml.FXML
     private TextField balanceTF;
     @javafx.fxml.FXML
-    private TableView accountTV;
+    private TableView <AccountMerchantBankExecutive>accountTV;
     @javafx.fxml.FXML
-    private ComboBox statusCB;
+    private ComboBox <String>statusCB;
     @javafx.fxml.FXML
     private TextField accIDTF;
     @javafx.fxml.FXML
-    private TableColumn accIDColUser7;
+    private TableColumn <AccountMerchantBankExecutive, Integer>accIDColUser7;
     @javafx.fxml.FXML
-    private TableColumn balanceColUser7;
+    private TableColumn <AccountMerchantBankExecutive, Float>balanceColUser7;
     @javafx.fxml.FXML
-    private TableColumn accNameColUser7;
+    private TableColumn <AccountMerchantBankExecutive, String>accNameColUser7;
     @javafx.fxml.FXML
-    private TableColumn statusColUser7;
+    private TableColumn <AccountMerchantBankExecutive, String>statusColUser7;
 
     @javafx.fxml.FXML
     public void initialize() {

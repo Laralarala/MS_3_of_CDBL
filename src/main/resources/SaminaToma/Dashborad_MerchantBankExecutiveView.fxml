@@ -39,10 +39,10 @@
             <Button mnemonicParsing="false" onAction="#transactionViewOA" prefHeight="26.0" prefWidth="158.0" text="Transaction" />
             <Button mnemonicParsing="false" onAction="#securityMangementViewOA" prefHeight="26.0" prefWidth="163.0" text="Security Management" />
             <Button mnemonicParsing="false" onAction="#complianceViewOA" prefHeight="26.0" prefWidth="151.0" text="Compliance" />
-            <Button mnemonicParsing="false" onAction="#searchClientViewOA" prefHeight="26.0" prefWidth="165.0" text="Search Client" />
+            <Button mnemonicParsing="false" onAction="#updateRecordsViewOA" prefHeight="26.0" prefWidth="165.0" text="Records" />
             <Button mnemonicParsing="false" onAction="#portfolioViewOA" prefHeight="26.0" prefWidth="154.0" text="Portfolio" />
             <Button mnemonicParsing="false" onAction="#reportViewOA" prefHeight="26.0" prefWidth="166.0" text="Report" />
-            <Button mnemonicParsing="false" onAction="#profileViewOA" prefHeight="26.0" prefWidth="170.0" text="Profile" />
+            <Button mnemonicParsing="false" onAction="#approveTransactionViewOA" prefHeight="26.0" prefWidth="170.0" text="Approved" />
             <Button mnemonicParsing="false" onAction="#logOutViewOA" prefHeight="26.0" prefWidth="165.0" text="Log Out" />
          </children>
       </VBox>
@@ -51,6 +51,6 @@
       <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER" />
    </center>
    <bottom>
-      <Label prefHeight="18.0" prefWidth="639.0" style="-fx-background-color: pink;" text="Label" BorderPane.alignment="CENTER" />
+      <Label prefHeight="2.0" prefWidth="600.0" style="-fx-background-color: pink;" text="Label" BorderPane.alignment="CENTER" />
    </bottom>
 </BorderPane>

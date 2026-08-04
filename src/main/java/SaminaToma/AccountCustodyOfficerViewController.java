@@ -9,25 +9,25 @@ import javafx.scene.control.TextField;
 public class AccountCustodyOfficerViewController
 {
     @javafx.fxml.FXML
-    private TableColumn custodyAccNameCol;
+    private TableColumn <AccountCustodyOfficer, String>custodyAccNameCol;
     @javafx.fxml.FXML
     private TextField custodyBalanceTF;
     @javafx.fxml.FXML
-    private TableColumn custodyHolderNameCol;
+    private TableColumn <AccountCustodyOfficer, String>custodyHolderNameCol;
     @javafx.fxml.FXML
-    private ComboBox custodyStatusCmB;
+    private ComboBox <String> custodyStatusCmB;
     @javafx.fxml.FXML
-    private TableView custodyAccTV;
+    private TableView <AccountCustodyOfficer>custodyAccTV;
     @javafx.fxml.FXML
     private TextField custodyAccNameTF;
     @javafx.fxml.FXML
-    private TableColumn custodyAccIDCol;
+    private TableColumn <AccountCustodyOfficer, String>custodyAccIDCol;
     @javafx.fxml.FXML
     private TextField custodyHolderNameTF;
     @javafx.fxml.FXML
     private TextField custodyAccIDTF;
     @javafx.fxml.FXML
-    private TableColumn custodyStatusCol;
+    private TableColumn <AccountCustodyOfficer, String>custodyStatusCol;
 
     @javafx.fxml.FXML
     public void initialize() {

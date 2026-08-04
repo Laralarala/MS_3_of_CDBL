@@ -8,15 +8,15 @@ import javafx.scene.control.TextField;
 public class PortfolioMerchantBankExecutiveViewController
 {
     @javafx.fxml.FXML
-    private TableColumn portfolioIDColUser7;
+    private TableColumn <PortfolioMerchantBankExecutive, String>portfolioIDColUser7;
     @javafx.fxml.FXML
-    private TableColumn totalValueColUser7;
+    private TableColumn <PortfolioMerchantBankExecutive, Float>totalValueColUser7;
     @javafx.fxml.FXML
-    private TableColumn quantityColUser7;
+    private TableColumn <PortfolioMerchantBankExecutive, Integer>quantityColUser7;
     @javafx.fxml.FXML
-    private TableView portfolioTV;
+    private TableView <PortfolioMerchantBankExecutive>portfolioTV;
     @javafx.fxml.FXML
-    private TableColumn accNumColUser7;
+    private TableColumn <PortfolioMerchantBankExecutive, Integer>accNumColUser7;
     @javafx.fxml.FXML
     private TextField accNumTF;
 

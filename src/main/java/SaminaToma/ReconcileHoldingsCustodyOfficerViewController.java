@@ -11,9 +11,9 @@ public class ReconcileHoldingsCustodyOfficerViewController
     @javafx.fxml.FXML
     private TextField custodyHoldingIDTF;
     @javafx.fxml.FXML
-    private TableColumn custodyHoldingIDCol;
+    private TableColumn <ReconcileHoldingsCustodyOfficer, String>custodyHoldingIDCol;
     @javafx.fxml.FXML
-    private TableColumn custodyQuantityCol;
+    private TableColumn <ReconcileHoldingsCustodyOfficer, Integer>custodyQuantityCol;
     @javafx.fxml.FXML
     private TextField custodySecurityIDTF;
     @javafx.fxml.FXML
@@ -21,17 +21,17 @@ public class ReconcileHoldingsCustodyOfficerViewController
     @javafx.fxml.FXML
     private TextField custodyQuantityTF;
     @javafx.fxml.FXML
-    private ComboBox custodyStatusCmB;
+    private ComboBox <String>custodyStatusCmB;
     @javafx.fxml.FXML
-    private TableColumn custodySecurityIDCol;
+    private TableColumn <ReconcileHoldingsCustodyOfficer, String>custodySecurityIDCol;
     @javafx.fxml.FXML
-    private TableColumn custodyStatusCol;
+    private TableColumn <ReconcileHoldingsCustodyOfficer, String>custodyStatusCol;
     @javafx.fxml.FXML
-    private TableColumn custodySecurityNameCol;
+    private TableColumn <ReconcileHoldingsCustodyOfficer, String>custodySecurityNameCol;
     @javafx.fxml.FXML
-    private TableColumn custodyAccNumCol;
+    private TableColumn <ReconcileHoldingsCustodyOfficer, Integer>custodyAccNumCol;
     @javafx.fxml.FXML
-    private TableView custodyReconcileHoldsTV;
+    private TableView <ReconcileHoldingsCustodyOfficer>custodyReconcileHoldsTV;
     @javafx.fxml.FXML
     private TextField custodySecurityNameTF;
 

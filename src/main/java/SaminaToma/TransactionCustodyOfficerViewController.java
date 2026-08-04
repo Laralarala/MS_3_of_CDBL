@@ -3,30 +3,32 @@ package SaminaToma;
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 
+import java.time.LocalDate;
+
 public class TransactionCustodyOfficerViewController
 {
     @javafx.fxml.FXML
     private TextField custodyAccNoTF;
     @javafx.fxml.FXML
-    private TableColumn custodyQuantityCol;
+    private TableColumn <TransactionCustodyOfficer, Integer>custodyQuantityCol;
     @javafx.fxml.FXML
     private TextField custodyTransactionIDTF;
     @javafx.fxml.FXML
     private DatePicker custodyTransactionDateDP;
     @javafx.fxml.FXML
-    private TableColumn custodyTransactionTypeCol;
+    private TableColumn <TransactionCustodyOfficer,String>custodyTransactionTypeCol;
     @javafx.fxml.FXML
     private TextField custodyQuantityTF;
     @javafx.fxml.FXML
-    private TableColumn custodyTransactionIDCol;
+    private TableColumn <TransactionCustodyOfficer, String>custodyTransactionIDCol;
     @javafx.fxml.FXML
-    private TableColumn custodyAmountCol;
+    private TableColumn <TransactionCustodyOfficer, Float>custodyAmountCol;
     @javafx.fxml.FXML
-    private TableColumn custodyTransactionDateCol;
+    private TableColumn <TransactionCustodyOfficer, LocalDate>custodyTransactionDateCol;
     @javafx.fxml.FXML
-    private TableView custodyTransactionTV;
+    private TableView <TransactionCustodyOfficer>custodyTransactionTV;
     @javafx.fxml.FXML
-    private ComboBox custodyTransactionTypeCmB;
+    private ComboBox <String>custodyTransactionTypeCmB;
     @javafx.fxml.FXML
     private TextField custodyAmountTF;
 

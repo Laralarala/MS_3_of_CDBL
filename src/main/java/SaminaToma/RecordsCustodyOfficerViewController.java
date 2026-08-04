@@ -6,12 +6,14 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 
+import java.time.LocalDate;
+
 public class RecordsCustodyOfficerViewController
 {
     @javafx.fxml.FXML
     private TextField custodyEmailTF;
     @javafx.fxml.FXML
-    private TableColumn custodyDateOfBirthCol;
+    private TableColumn <RecordsCustodyOfficer, LocalDate>custodyDateOfBirthCol;
     @javafx.fxml.FXML
     private TextField custodyClientIDTF;
     @javafx.fxml.FXML
@@ -19,15 +21,15 @@ public class RecordsCustodyOfficerViewController
     @javafx.fxml.FXML
     private DatePicker custodyDateOfBirthDP;
     @javafx.fxml.FXML
-    private TableColumn custodyClientNameCol;
+    private TableColumn <RecordsCustodyOfficer, String>custodyClientNameCol;
     @javafx.fxml.FXML
-    private TableColumn custodyAccNumCol;
+    private TableColumn <RecordsCustodyOfficer, Integer>custodyAccNumCol;
     @javafx.fxml.FXML
     private TextField custodyClientNameTF;
     @javafx.fxml.FXML
-    private TableColumn custodyClientIDCol;
+    private TableColumn <RecordsCustodyOfficer, String>custodyClientIDCol;
     @javafx.fxml.FXML
-    private TableView custodyRecordsTV;
+    private TableView <RecordsCustodyOfficer>custodyRecordsTV;
 
     @javafx.fxml.FXML
     public void initialize() {

@@ -6,13 +6,12 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SaminaToma.ApproveTransactionMerchantBankExecutiveViewController">
    <children>
       <TextField fx:id="approvalRemarksTF" layoutX="50.0" layoutY="39.0" promptText="Approval Remarks:" />
       <Button layoutX="333.0" layoutY="39.0" mnemonicParsing="false" onAction="#handleApproveForApproveTransactionOA" text="Approve" />
       <Button layoutX="333.0" layoutY="86.0" mnemonicParsing="false" onAction="#handleBackForApproveTransactionOA" text="Back" />
-      <TableView fx:id="approvetransactionTV" layoutX="16.0" layoutY="170.0" prefHeight="200.0" prefWidth="566.0">
+      <TableView fx:id="approveTransactionTV" layoutX="16.0" layoutY="170.0" prefHeight="200.0" prefWidth="566.0">
         <columns>
           <TableColumn fx:id="transactionIDColUser7" prefWidth="103.2000732421875" text="Transaction ID" />
           <TableColumn fx:id="accNumColUser7" prefWidth="111.20001220703125" text="Account Number" />

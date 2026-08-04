@@ -3,16 +3,18 @@ package SaminaToma;
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 
+import java.time.LocalDate;
+
 public class TransactionMerchantBankExecutiveViewController
 {
     @javafx.fxml.FXML
     private TextField accNoTF;
     @javafx.fxml.FXML
-    private ComboBox transactionTypeCB;
+    private ComboBox <String>transactionTypeCB;
     @javafx.fxml.FXML
     private DatePicker transactionDateDP;
     @javafx.fxml.FXML
-    private TableView transactionTV;
+    private TableView <TransactionMerchantBankExecutive>transactionTV;
     @javafx.fxml.FXML
     private TextField transactionIDTF;
     @javafx.fxml.FXML
@@ -20,15 +22,15 @@ public class TransactionMerchantBankExecutiveViewController
     @javafx.fxml.FXML
     private TextField amountTF;
     @javafx.fxml.FXML
-    private TableColumn transactionIDColUser7;
+    private TableColumn <TransactionMerchantBankExecutive, String>transactionIDColUser7;
     @javafx.fxml.FXML
-    private TableColumn amountColUser7;
+    private TableColumn <TransactionMerchantBankExecutive, Float>amountColUser7;
     @javafx.fxml.FXML
-    private TableColumn quantityColUser7;
+    private TableColumn <TransactionMerchantBankExecutive, Integer>quantityColUser7;
     @javafx.fxml.FXML
-    private TableColumn transactionTypeUser17;
+    private TableColumn <TransactionMerchantBankExecutive, String>transactionTypeUser17;
     @javafx.fxml.FXML
-    private TableColumn transactionDateColUser7;
+    private TableColumn <TransactionMerchantBankExecutive, LocalDate>transactionDateColUser7;
 
     @javafx.fxml.FXML
     public void initialize() {

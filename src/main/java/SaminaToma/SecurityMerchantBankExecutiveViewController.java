@@ -8,19 +8,19 @@ import javafx.scene.control.TextField;
 public class SecurityMerchantBankExecutiveViewController
 {
     @javafx.fxml.FXML
-    private TableColumn securityIDColUser7;
+    private TableColumn <SecurityMerchantBankExecutive, String>securityIDColUser7;
     @javafx.fxml.FXML
-    private TableColumn companyNameColUser7;
+    private TableColumn <SecurityMerchantBankExecutive, String>companyNameColUser7;
     @javafx.fxml.FXML
     private TextField companyNameTF;
     @javafx.fxml.FXML
     private TextField priceTF;
     @javafx.fxml.FXML
-    private TableView securityTV;
+    private TableView <SecurityMerchantBankExecutive>securityTV;
     @javafx.fxml.FXML
-    private TableColumn priceColUser7;
+    private TableColumn <SecurityMerchantBankExecutive, Float>priceColUser7;
     @javafx.fxml.FXML
-    private TableColumn quantityColUser7;
+    private TableColumn <SecurityMerchantBankExecutive, Integer>quantityColUser7;
     @javafx.fxml.FXML
     private TextField securityIDTF;
     @javafx.fxml.FXML

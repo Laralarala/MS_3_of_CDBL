@@ -11,17 +11,17 @@ public class ComplianceMerchantBankExecutiveViewController
     @javafx.fxml.FXML
     private TextField accNoTF;
     @javafx.fxml.FXML
-    private TableColumn compIDColUser7;
+    private TableColumn <ComplianceMerchantBankExecutive, Integer>compIDColUser7;
     @javafx.fxml.FXML
     private TextField compIDTF;
     @javafx.fxml.FXML
-    private ComboBox statusCB;
+    private ComboBox <Integer>statusCB;
     @javafx.fxml.FXML
-    private TableColumn accNoColUser7;
+    private TableColumn<ComplianceMerchantBankExecutive, Integer> accNoColUser7;
     @javafx.fxml.FXML
-    private TableView complianceTV;
+    private TableView <ComplianceMerchantBankExecutive>complianceTV;
     @javafx.fxml.FXML
-    private TableColumn statusColUser7;
+    private TableColumn <ComplianceMerchantBankExecutive, String>statusColUser7;
 
     @javafx.fxml.FXML
     public void initialize() {

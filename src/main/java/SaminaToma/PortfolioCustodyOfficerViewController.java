@@ -8,17 +8,17 @@ import javafx.scene.control.TextField;
 public class PortfolioCustodyOfficerViewController
 {
     @javafx.fxml.FXML
-    private TableColumn custodyPortfolioIDCol;
+    private TableColumn <PortfolioCustodyOfficer,String>custodyPortfolioIDCol;
     @javafx.fxml.FXML
-    private TableColumn custodyTotalValueCol;
+    private TableColumn <PortfolioCustodyOfficer, Float>custodyTotalValueCol;
     @javafx.fxml.FXML
-    private TableColumn custodyQuantityCol;
+    private TableColumn <PortfolioCustodyOfficer, Integer>custodyQuantityCol;
     @javafx.fxml.FXML
     private TextField custodyAccNumTF;
     @javafx.fxml.FXML
-    private TableView custodyPortfolioTV;
+    private TableView <PortfolioCustodyOfficer>custodyPortfolioTV;
     @javafx.fxml.FXML
-    private TableColumn custodyAccNumCol;
+    private TableColumn <PortfolioCustodyOfficer, Integer>custodyAccNumCol;
 
     @javafx.fxml.FXML
     public void initialize() {

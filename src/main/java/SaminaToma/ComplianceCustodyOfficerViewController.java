@@ -11,17 +11,17 @@ public class ComplianceCustodyOfficerViewController
     @javafx.fxml.FXML
     private TextField custodyAccNoTF;
     @javafx.fxml.FXML
-    private ComboBox custodyStatusCmB;
+    private ComboBox <String>custodyStatusCmB;
     @javafx.fxml.FXML
-    private TableView custodyComplianceTV;
+    private TableView <ComplianceCustodyOfficer>custodyComplianceTV;
     @javafx.fxml.FXML
-    private TableColumn custodyAccNoCol;
+    private TableColumn <ComplianceCustodyOfficer, Integer>custodyAccNoCol;
     @javafx.fxml.FXML
-    private TableColumn custodyStatusCol;
+    private TableColumn <ComplianceCustodyOfficer, String>custodyStatusCol;
     @javafx.fxml.FXML
     private TextField custodyCompIDTF;
     @javafx.fxml.FXML
-    private TableColumn custodyCompIDCol;
+    private TableColumn <ComplianceCustodyOfficer, Integer>custodyCompIDCol;
 
     @javafx.fxml.FXML
     public void initialize() {

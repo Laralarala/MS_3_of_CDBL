@@ -5,24 +5,26 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 
+import java.time.LocalDate;
+
 public class ApproveTransactionMerchantBankExecutiveViewController
 {
     @javafx.fxml.FXML
-    private TableColumn transactionIDColUser7;
+    private TableColumn <ApproveTransactionMerchantBankExecutive, String>transactionIDColUser7;
     @javafx.fxml.FXML
-    private TableColumn amountColUser7;
+    private TableColumn <ApproveTransactionMerchantBankExecutive, Float>amountColUser7;
     @javafx.fxml.FXML
-    private TableColumn accNumColUser7;
+    private TableColumn <ApproveTransactionMerchantBankExecutive, Integer>accNumColUser7;
     @javafx.fxml.FXML
     private TextField approvalRemarksTF;
     @javafx.fxml.FXML
-    private TableView approvetransactionTV;
+    private TableColumn <ApproveTransactionMerchantBankExecutive, LocalDate>transactionDateColUser7;
     @javafx.fxml.FXML
-    private TableColumn transactionDateColUser7;
+    private TableColumn <ApproveTransactionMerchantBankExecutive, String>transactionTypeColUser7;
     @javafx.fxml.FXML
-    private TableColumn transactionTypeColUser7;
+    private TableColumn <ApproveTransactionMerchantBankExecutive, String>statusColUser7;
     @javafx.fxml.FXML
-    private TableColumn statusColUser7;
+    private TableView <ApproveTransactionMerchantBankExecutive>approveTransactionTV;
 
     @javafx.fxml.FXML
     public void initialize() {

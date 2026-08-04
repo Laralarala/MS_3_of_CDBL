@@ -6,22 +6,24 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 
+import java.time.LocalDate;
+
 public class ReportCustodyOfficerViewController
 {
     @javafx.fxml.FXML
     private TextField custodyReportIDTF;
     @javafx.fxml.FXML
-    private TableColumn custodyReportTypeCol;
+    private TableColumn <ReportCustodyOfficer, String>custodyReportTypeCol;
     @javafx.fxml.FXML
     private TextField custodyReportTypeTF;
     @javafx.fxml.FXML
     private DatePicker custodyReportDateDP;
     @javafx.fxml.FXML
-    private TableColumn custodyReportDateCol;
+    private TableColumn <ReportCustodyOfficer, LocalDate>custodyReportDateCol;
     @javafx.fxml.FXML
-    private TableColumn custodyReportIDCol;
+    private TableColumn <ReportCustodyOfficer, String>custodyReportIDCol;
     @javafx.fxml.FXML
-    private TableView custodyReportTV;
+    private TableView <ReportCustodyOfficer>custodyReportTV;
 
     @javafx.fxml.FXML
     public void initialize() {
