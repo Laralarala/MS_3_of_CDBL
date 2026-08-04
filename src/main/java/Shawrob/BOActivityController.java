@@ -6,25 +6,27 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 
+import java.time.LocalDate;
+
 public class BOActivityController
 {
 
     @javafx.fxml.FXML
-    private TableColumn priceTC;
+    private TableColumn<BOActivity , Float> priceTC;
     @javafx.fxml.FXML
-    private TableColumn tradeDateTC;
+    private TableColumn<BOActivity , LocalDate> tradeDateTC;
     @javafx.fxml.FXML
-    private TableView boActivityTV;
+    private TableView<BOActivity> boActivityTV;
     @javafx.fxml.FXML
-    private TableColumn typeTC;
+    private TableColumn<BOActivity , String> typeTC;
     @javafx.fxml.FXML
     private DatePicker toDateDP;
     @javafx.fxml.FXML
     private DatePicker fromDateDP;
     @javafx.fxml.FXML
-    private TableColumn securityNameTC;
+    private TableColumn<BOActivity , String> securityNameTC;
     @javafx.fxml.FXML
-    private TableColumn quantityTC;
+    private TableColumn<BOActivity , Integer> quantityTC;
     @javafx.fxml.FXML
     private TextField accountNoTF;
 

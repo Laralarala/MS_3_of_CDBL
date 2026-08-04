@@ -6,24 +6,26 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 
+import java.time.LocalDate;
+
 public class DailySummaryController
 {
     @javafx.fxml.FXML
-    private TableColumn reportIDTC;
+    private TableColumn<DailySummary , Integer> reportIDTC;
     @javafx.fxml.FXML
     private DatePicker generateDateDP;
     @javafx.fxml.FXML
-    private TableView dailySummaryTV;
+    private TableView<DailySummary> dailySummaryTV;
     @javafx.fxml.FXML
-    private TableColumn reportTypeTC;
+    private TableColumn<DailySummary , String> reportTypeTC;
     @javafx.fxml.FXML
-    private TableColumn dateTC;
+    private TableColumn<DailySummary , LocalDate> dateTC;
     @javafx.fxml.FXML
-    private TextField reportidTF;
+    private TableColumn<DailySummary , String> statusTC;
     @javafx.fxml.FXML
-    private TableColumn statusTC;
+    private TextField reportTypeTF;
     @javafx.fxml.FXML
-    private TextField reporttypeTF;
+    private TextField reportIDTF;
 
     @javafx.fxml.FXML
     public void initialize() {

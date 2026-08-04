@@ -5,21 +5,23 @@ import javafx.scene.control.DatePicker;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 
+import java.time.LocalDate;
+
 public class SettlementReportController
 {
 
     @javafx.fxml.FXML
-    private TableView settlementReportTV;
+    private TableView<SettlementReport> settlementReportTV;
     @javafx.fxml.FXML
-    private TableColumn reportIDTC;
+    private TableColumn<SettlementReport , Integer> reportIDTC;
     @javafx.fxml.FXML
     private DatePicker generateDateDP;
     @javafx.fxml.FXML
-    private TableColumn reportTypeTC;
+    private TableColumn<SettlementReport , String> reportTypeTC;
     @javafx.fxml.FXML
-    private TableColumn dateTC;
+    private TableColumn<SettlementReport , LocalDate> dateTC;
     @javafx.fxml.FXML
-    private TableColumn fileFormatTC;
+    private TableColumn<SettlementReport , String> fileFormatTC;
 
     @javafx.fxml.FXML
     public void initialize() {

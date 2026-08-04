@@ -6,18 +6,20 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 
+import java.time.LocalDate;
+
 public class SuspiciousTransactionsController
 {
     @javafx.fxml.FXML
-    private TableColumn tradeDateTC;
+    private TableColumn<SuspiciousTransactions , LocalDate> tradeDateTC;
     @javafx.fxml.FXML
-    private TableColumn typeTC;
+    private TableColumn<SuspiciousTransactions , String> typeTC;
     @javafx.fxml.FXML
-    private TableView suspiciousTransactionsTV;
+    private TableView<SuspiciousTransactions> suspiciousTransactionsTV;
     @javafx.fxml.FXML
-    private TableColumn transactionIDTC;
+    private TableColumn<SuspiciousTransactions , Integer> transactionIDTC;
     @javafx.fxml.FXML
-    private TableColumn quantityTC;
+    private TableColumn<SuspiciousTransactions , Integer> quantityTC;
     @javafx.fxml.FXML
     private TextField transactionIDTF;
     @javafx.fxml.FXML
