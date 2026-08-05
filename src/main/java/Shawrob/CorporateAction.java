@@ -12,7 +12,7 @@ public class CorporateAction {
         this.generateDate = generateDate;
         this.reportID = reportID;
         this.reportType = reportType;
-        this.fileFormat = fileFormat;
+        this.fileFormat = "PDF";
     }
 
     public LocalDate getGenerateDate() {

@@ -3,37 +3,20 @@ package Shawrob;
 import java.time.LocalDate;
 
 public class BOActivity {
-    private LocalDate fromDate , toDate ,tradeDate ;
+    private LocalDate tradeDate ;
     private int accountNo , quantity;
-    private String securityName , type ;
+    private String type ;
     private float price;
 
-    public BOActivity(LocalDate fromDate, LocalDate toDate, LocalDate tradeDate, int accountNo, int quantity, String securityName, String type, float price) {
-        this.fromDate = fromDate;
-        this.toDate = toDate;
+
+    public BOActivity(LocalDate tradeDate, int accountNo, int quantity, String type, float price) {
         this.tradeDate = tradeDate;
         this.accountNo = accountNo;
         this.quantity = quantity;
-        this.securityName = securityName;
         this.type = type;
         this.price = price;
     }
 
-    public LocalDate getFromDate() {
-        return fromDate;
-    }
-
-    public void setFromDate(LocalDate fromDate) {
-        this.fromDate = fromDate;
-    }
-
-    public LocalDate getToDate() {
-        return toDate;
-    }
-
-    public void setToDate(LocalDate toDate) {
-        this.toDate = toDate;
-    }
 
     public LocalDate getTradeDate() {
         return tradeDate;
@@ -59,14 +42,6 @@ public class BOActivity {
         this.quantity = quantity;
     }
 
-    public String getSecurityName() {
-        return securityName;
-    }
-
-    public void setSecurityName(String securityName) {
-        this.securityName = securityName;
-    }
-
     public String getType() {
         return type;
     }
@@ -83,15 +58,13 @@ public class BOActivity {
         this.price = price;
     }
 
+
     @Override
     public String toString() {
         return "BOActivity{" +
-                "fromDate=" + fromDate +
-                ", toDate=" + toDate +
-                ", tradeDate=" + tradeDate +
+                "tradeDate=" + tradeDate +
                 ", accountNo=" + accountNo +
                 ", quantity=" + quantity +
-                ", securityName='" + securityName + '\'' +
                 ", type='" + type + '\'' +
                 ", price=" + price +
                 '}';

@@ -12,7 +12,7 @@ public class DailySummary {
         this.generateDate = generateDate;
         this.reportID = reportID;
         this.reportType = reportType;
-        this.status = status;
+        this.status = "Active";
     }
 
     public LocalDate getGenerateDate() {

@@ -11,8 +11,9 @@ public class AuditTrail {
         this.generateDate = generateDate;
         this.reportId = reportId;
         this.reportType = reportType;
-        this.fileFormat = fileFormat;
+        this.fileFormat = "PDF";
     }
+
 
     public LocalDate getGenerateDate() {
         return generateDate;
@@ -45,6 +46,7 @@ public class AuditTrail {
     public void setFileFormat(String fileFormat) {
         this.fileFormat = fileFormat;
     }
+
 
     @Override
     public String toString() {

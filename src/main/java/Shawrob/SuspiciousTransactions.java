@@ -9,7 +9,7 @@ public class SuspiciousTransactions {
     private LocalDate tradeDate;
 
     public SuspiciousTransactions(String type, int transactionId, int quantity, LocalDate tradeDate) {
-        this.type = type;
+        this.type = "PDF";
         this.transactionId = transactionId;
         this.quantity = quantity;
         this.tradeDate = tradeDate;

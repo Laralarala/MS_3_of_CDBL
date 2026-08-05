@@ -5,6 +5,7 @@ import javafx.scene.control.DatePicker;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.time.LocalDate;
 
@@ -29,6 +30,11 @@ public class SuspiciousTransactionsController
 
     @javafx.fxml.FXML
     public void initialize() {
+
+        tradeDateTC.setCellValueFactory(new PropertyValueFactory<>("tradeDate"));
+        typeTC.setCellValueFactory(new PropertyValueFactory<>("type"));
+        transactionIDTC.setCellValueFactory(new PropertyValueFactory<>("transactionId"));
+        quantityTC.setCellValueFactory(new PropertyValueFactory<>("quantity"));
     }
 
     @javafx.fxml.FXML
