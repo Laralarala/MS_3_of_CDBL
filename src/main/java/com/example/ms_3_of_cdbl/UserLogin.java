@@ -1,24 +1,15 @@
 package com.example.ms_3_of_cdbl;
 
+import com.example.ms_3_of_cdbl.Utilities.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.scene.control.TextField;
 
-public class User
+public class UserLogin
 {
-    @javafx.fxml.FXML
-    private TextField phoneNumberTextField;
     @javafx.fxml.FXML
     private TextField passwordTextField;
     @javafx.fxml.FXML
     private TextField userIdTextfield;
-    @javafx.fxml.FXML
-    private TextField addressTextField;
-    @javafx.fxml.FXML
-    private TextField emailTextField;
-    @javafx.fxml.FXML
-    private TextField nidNumberTextField;
-    @javafx.fxml.FXML
-    private TextField nameTextField;
 
     @javafx.fxml.FXML
     public void initialize() {
@@ -26,5 +17,8 @@ public class User
 
     @javafx.fxml.FXML
     public void loginOnActionButton(ActionEvent actionEvent) {
+        String UserID = userIdTextfield.getText();
+        String password = passwordTextField.getText();
+        SceneSwitcher.switchScene(actionEvent,"/userDashboard.fxml","userDashboard");
     }
 }
