@@ -1,5 +1,9 @@
 package MarsiadRahman;
 
+import javafx.scene.control.*;
+
+import javafx.event.ActionEvent;
+
 public class ValidateTradeDataviewController
 {
     @javafx.fxml.FXML

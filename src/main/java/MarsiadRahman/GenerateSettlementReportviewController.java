@@ -1,33 +1,52 @@
 package MarsiadRahman;
 
-public class GenerateSettlementReportviewController
-{
-    @javafx.fxml.FXML
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.DatePicker;
+import javafx.scene.control.TextArea;
+
+
+
+public class GenerateSettlementReportviewController {
+
+    @FXML
     private TextArea txtAReportDetails;
-    @javafx.fxml.FXML
+    @FXML
     private Button btnBack;
-    @javafx.fxml.FXML
+    @FXML
     private DatePicker dpReportPeriod;
-    @javafx.fxml.FXML
+    @FXML
     private Button btnGenerateReport;
-    @javafx.fxml.FXML
+    @FXML
     private Button btnClear;
-    @javafx.fxml.FXML
-    private ComboBox cmbReportType;
+    @FXML
+    private ComboBox<String> cmbReportType;
 
-    @javafx.fxml.FXML
+    @FXML
     public void initialize() {
+        cmbReportType.getItems().addAll(
+                "Daily Report",
+                "Weekly Report",
+                "Monthly Report"
+        );
     }
 
-    @javafx.fxml.FXML
-    public void backOA(ActionEvent actionEvent) {
+    @FXML
+    public void backOA(ActionEvent event) {
+        System.out.println("Back Button Clicked");
     }
 
-    @javafx.fxml.FXML
-    public void generatereportOA(ActionEvent actionEvent) {
+    @FXML
+    public void generateReportOA(ActionEvent event) {
+        System.out.println("Generate Report Clicked");
     }
 
-    @javafx.fxml.FXML
-    public void clearOA(ActionEvent actionEvent) {
+    @FXML
+    public void clearOA(ActionEvent event) {
+        cmbReportType.setValue(null);
+        dpReportPeriod.setValue(null);
+        txtAReportDetails.clear();
     }
 }

@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane prefHeight="596.0" prefWidth="808.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MarsiadRahman.ViewPortfolioviewController">
+<AnchorPane prefHeight="596.0" prefWidth="808.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MarsiadRahman.ViewPortfolioviewController">
    <children>
       <TextField fx:id="txtBoAccountNo" layoutX="308.0" layoutY="67.0" />
       <ComboBox fx:id="cmbPortfolioOption" layoutX="87.0" layoutY="205.0" prefHeight="70.0" prefWidth="150.0" />

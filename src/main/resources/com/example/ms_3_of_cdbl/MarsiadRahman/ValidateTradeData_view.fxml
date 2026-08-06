@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane prefHeight="590.0" prefWidth="794.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MarsiadRahman.ValidateTradeDataviewController">
+<AnchorPane prefHeight="590.0" prefWidth="794.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MarsiadRahman.ValidateTradeDataviewController">
    <children>
       <TextField fx:id="txtTradeID" layoutX="48.0" layoutY="75.0" />
       <TextField fx:id="txtSettlementID" layoutX="273.0" layoutY="75.0" />

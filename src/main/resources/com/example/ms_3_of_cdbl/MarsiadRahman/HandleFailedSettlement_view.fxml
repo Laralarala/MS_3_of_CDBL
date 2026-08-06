@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane prefHeight="543.0" prefWidth="768.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MarsiadRahman.HandleFailedSettlementviewController">
+<AnchorPane prefHeight="543.0" prefWidth="768.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MarsiadRahman.HandleFailedSettlementviewController">
    <children>
       <TextField fx:id="txtTransactionID" layoutX="44.0" layoutY="66.0" />
       <TextArea fx:id="txtAFailureReason" layoutX="44.0" layoutY="201.0" prefHeight="200.0" prefWidth="200.0" />

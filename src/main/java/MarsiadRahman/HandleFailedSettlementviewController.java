@@ -1,35 +1,44 @@
 package MarsiadRahman;
 
-public class HandleFailedSettlementviewController
-{
-    @javafx.fxml.FXML
-    private TextField txtTransactionID;
-    @javafx.fxml.FXML
-    private Button btnBack;
-    @javafx.fxml.FXML
-    private TextArea txtAFailureReason;
-    @javafx.fxml.FXML
-    private Button btnRecordFailure;
-    @javafx.fxml.FXML
-    private TextArea txtAActionTaken;
-    @javafx.fxml.FXML
-    private ComboBox cmbSettlementStatus;
-    @javafx.fxml.FXML
-    private Button btnClear;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 
-    @javafx.fxml.FXML
+public class HandleFailedSettlementviewController {
+
+    @FXML private TextField txtTransactionID;
+    @FXML private TextArea txtAFailureReason;
+    @FXML private TextArea txtAActionTaken;
+    @FXML private ComboBox<String> cmbSettlementStatus;
+    @FXML private Button btnRecordFailure;
+    @FXML private Button btnClear;
+    @FXML private Button btnBack;
+
+    @FXML
     public void initialize() {
+        cmbSettlementStatus.getItems().addAll("Pending", "Resolved", "Escalated");
     }
 
-    @javafx.fxml.FXML
-    public void backOA(ActionEvent actionEvent) {
+    @FXML
+    public void backOA(ActionEvent event) {
+        System.out.println("Back button clicked");
     }
 
-    @javafx.fxml.FXML
-    public void clearOA(ActionEvent actionEvent) {
+    @FXML
+    public void clearOA(ActionEvent event) {
+        // Shob clear kore dibe
+        txtTransactionID.clear();
+        txtAFailureReason.clear();
+        txtAActionTaken.clear();
+        cmbSettlementStatus.setValue(null);
     }
 
-    @javafx.fxml.FXML
-    public void recordfailureOA(ActionEvent actionEvent) {
+    @FXML
+    public void recordfailureOA(ActionEvent event) {
+        System.out.println("Record Failure Clicked");
+        System.out.println("ID: " + txtTransactionID.getText());
     }
 }

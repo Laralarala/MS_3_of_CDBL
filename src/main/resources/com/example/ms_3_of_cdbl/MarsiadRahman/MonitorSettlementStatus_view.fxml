@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane prefHeight="532.0" prefWidth="756.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MarsiadRahman.MonitorSettlementStatusviewController">
+<AnchorPane prefHeight="532.0" prefWidth="756.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MarsiadRahman.MonitorSettlementStatusviewController">
    <children>
       <TextField fx:id="txtSettlementBatchID" layoutX="139.0" layoutY="75.0" />
       <ComboBox fx:id="cmbSettlementStatus" layoutX="348.0" layoutY="159.0" prefWidth="150.0" />

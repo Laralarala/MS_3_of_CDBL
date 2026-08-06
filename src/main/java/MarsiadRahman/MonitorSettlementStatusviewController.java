@@ -1,41 +1,49 @@
 package MarsiadRahman;
 
-public class MonitorSettlementStatusviewController
-{
-    @javafx.fxml.FXML
-    private Button btnBack;
-    @javafx.fxml.FXML
-    private TextArea txtAStatusDetails;
-    @javafx.fxml.FXML
-    private Button btnSearch;
-    @javafx.fxml.FXML
-    private Button btnUpdateStatus;
-    @javafx.fxml.FXML
-    private ComboBox cmbSettlementStatus;
-    @javafx.fxml.FXML
-    private DatePicker dpLastUpdated;
-    @javafx.fxml.FXML
-    private Button btnClear;
-    @javafx.fxml.FXML
-    private TextField txtSettlementBatchID;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.*;
 
-    @javafx.fxml.FXML
+public class MonitorSettlementStatusviewController {
+
+    @FXML private TextField txtSettlementBatchID;
+    @FXML private ComboBox<String> cmbSettlementStatus;
+    @FXML private DatePicker dpLastUpdated;
+    @FXML private TextArea txtAStatusDetails;
+    @FXML private Button btnSearch;
+    @FXML private Button btnUpdateStatus;
+    @FXML private Button btnClear;
+    @FXML private Button btnBack;
+
+    @FXML
     public void initialize() {
+
+        cmbSettlementStatus.getItems().addAll("Pending", "Completed", "Failed");
     }
 
-    @javafx.fxml.FXML
-    public void updatestatusOA(ActionEvent actionEvent) {
+    @FXML
+    public void searchOA(ActionEvent event) {
+        String batchID = txtSettlementBatchID.getText();
+        txtAStatusDetails.setText("Searching for Batch ID: " + batchID);
     }
 
-    @javafx.fxml.FXML
-    public void backOA(ActionEvent actionEvent) {
+    @FXML
+    public void updatestatusOA(ActionEvent event) {
+        String status = cmbSettlementStatus.getValue();
+        txtAStatusDetails.setText("Status Updated to: " + status);
     }
 
-    @javafx.fxml.FXML
-    public void searchOA(ActionEvent actionEvent) {
+    @FXML
+    public void clearOA(ActionEvent event) {
+        // Shob clear
+        txtSettlementBatchID.clear();
+        txtAStatusDetails.clear();
+        cmbSettlementStatus.setValue(null);
+        dpLastUpdated.setValue(null);
     }
 
-    @javafx.fxml.FXML
-    public void clearOA(ActionEvent actionEvent) {
+    @FXML
+    public void backOA(ActionEvent event) {
+        System.out.println("Back Button Clicked");
     }
 }

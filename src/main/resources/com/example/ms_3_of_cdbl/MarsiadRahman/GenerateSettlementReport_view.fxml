@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane prefHeight="549.0" prefWidth="749.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MarsiadRahman.GenerateSettlementReportviewController">
+<AnchorPane prefHeight="549.0" prefWidth="749.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MarsiadRahman.GenerateSettlementReportviewController">
    <children>
       <ComboBox fx:id="cmbReportType" layoutX="122.0" layoutY="86.0" prefWidth="150.0" />
       <DatePicker fx:id="dpReportPeriod" layoutX="319.0" layoutY="139.0" />
