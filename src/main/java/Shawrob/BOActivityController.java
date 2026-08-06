@@ -1,5 +1,7 @@
 package Shawrob;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -32,6 +34,8 @@ public class BOActivityController
     @javafx.fxml.FXML
     private TextField quantityTF;
 
+    private ObservableList<BOActivity> activityList = FXCollections.observableArrayList();
+
     @javafx.fxml.FXML
     public void initialize() {
 
@@ -41,6 +45,8 @@ public class BOActivityController
         priceTC.setCellValueFactory(new PropertyValueFactory<>("price"));
         tradeDateTC.setCellValueFactory(new PropertyValueFactory<>("tradeDate"));
         typeTC.setCellValueFactory(new PropertyValueFactory<>("type"));
+
+        boActivityTV.setItems(activityList);
     }
 
     @javafx.fxml.FXML

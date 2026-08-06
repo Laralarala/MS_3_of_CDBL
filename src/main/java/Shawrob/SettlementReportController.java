@@ -1,5 +1,7 @@
 package Shawrob;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TableColumn;
@@ -29,6 +31,8 @@ public class SettlementReportController
     @javafx.fxml.FXML
     private TextField reportIdTF;
 
+    private ObservableList<SettlementReport> activityList = FXCollections.observableArrayList();
+
     @javafx.fxml.FXML
     public void initialize() {
 
@@ -36,6 +40,7 @@ public class SettlementReportController
         reportTypeTC.setCellValueFactory(new PropertyValueFactory<>("reportType"));
         dateTC.setCellValueFactory(new PropertyValueFactory<>("generateDate"));
         fileFormatTC.setCellValueFactory(new PropertyValueFactory<>("fileFormat"));
+        settlementReportTV.setItems(activityList);
     }
 
     @javafx.fxml.FXML

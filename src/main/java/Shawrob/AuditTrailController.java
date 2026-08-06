@@ -1,5 +1,7 @@
 package Shawrob;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TableColumn;
@@ -24,6 +26,8 @@ public class AuditTrailController
     @javafx.fxml.FXML
     private TableColumn<AuditTrail , String> fileFormatTC;
 
+    private ObservableList<AuditTrail> activityList = FXCollections.observableArrayList();
+
     @javafx.fxml.FXML
     public void initialize() {
 
@@ -31,6 +35,8 @@ public class AuditTrailController
         reportTypeTC.setCellValueFactory(new PropertyValueFactory<>("reportType"));
         dateTC.setCellValueFactory(new PropertyValueFactory<>("generateDate"));
         fileFormatTC.setCellValueFactory(new PropertyValueFactory<>("fileFormat"));
+
+        auditTrailTV.setItems(activityList);
     }
 
     @javafx.fxml.FXML
