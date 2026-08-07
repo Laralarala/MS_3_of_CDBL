@@ -39,7 +39,7 @@ public class ComplianceOfficerDashboardController
 
     @javafx.fxml.FXML
     public void logoutOnAction(ActionEvent actionEvent) throws IOException{
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("User.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("UserLogin.fxml"));
         Scene nextScene = new Scene(fxmlLoader.load());
         Stage nextStage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
         nextStage.setTitle("CDBL");

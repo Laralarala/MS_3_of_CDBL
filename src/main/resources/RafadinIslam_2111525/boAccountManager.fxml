@@ -1,18 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
 
-
-<AnchorPane prefHeight="632.0" prefWidth="979.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RafadinIslam_2111525.BoAccountManager">
-   <children>
-      <Button layoutX="14.0" layoutY="41.0" mnemonicParsing="false" onAction="#viewBoAccountDetailsButtonOnAction" prefHeight="53.0" prefWidth="406.0" text="View Bo Account Details" />
-      <Button layoutX="14.0" layoutY="198.0" mnemonicParsing="false" onAction="#addNewCustomerButtonOnAction" prefHeight="53.0" prefWidth="406.0" text="Add New Customer" />
-      <Button layoutX="14.0" layoutY="358.0" mnemonicParsing="false" onAction="#updateCustomerDetailsButtonOnAction" prefHeight="53.0" prefWidth="406.0" text="Update Customer Details" />
-      <Button layoutX="14.0" layoutY="525.0" mnemonicParsing="false" onAction="#DeleteCustomerDetailsButtonOnAction" prefHeight="53.0" prefWidth="406.0" text="Delete Customer Details" />
-      <Button layoutX="548.0" layoutY="41.0" mnemonicParsing="false" onAction="#LoadCustomerDataButtonOnAction" prefHeight="53.0" prefWidth="406.0" text="Load Customer Data" />
-      <Button layoutX="548.0" layoutY="198.0" mnemonicParsing="false" onAction="#sortCustomerRecordButtonOnAction" prefHeight="53.0" prefWidth="406.0" text="Sort Customer Record" />
-      <Button layoutX="548.0" layoutY="358.0" mnemonicParsing="false" onAction="#FilterCustomerButtonOnAction" prefHeight="53.0" prefWidth="406.0" text="Filter Customer" />
-      <Button layoutX="548.0" layoutY="525.0" mnemonicParsing="false" onAction="#searchCustomerByNameOrPlanButtonOnAction" prefHeight="53.0" prefWidth="406.0" text="Search Customer By Name Or Plan" />
-   </children>
-</AnchorPane>
+<BorderPane fx:id="boAccountManagerBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="755.0" prefWidth="1119.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RafadinIslam_2111525.boAccountManagerController">
+   <top>
+      <MenuBar prefHeight="0.0" prefWidth="1031.0" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <left>
+      <VBox prefHeight="488.0" prefWidth="153.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#viewAccountDetailsButtonOnAction" prefHeight="25.0" prefWidth="155.0" text="View Account Details" textAlignment="CENTER">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="50.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#addNewCustomerButtonOnAction" prefHeight="25.0" prefWidth="157.0" text="Add New Customer">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#updateCustomerDetailsButtonOnAction" prefHeight="25.0" prefWidth="154.0" text="Update Customer Details">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#deleteCusromerDetailsButtonOnAction" prefHeight="25.0" prefWidth="153.0" text="Delete Customer Details">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#loadCustomerDataButtonOnAction" prefHeight="25.0" prefWidth="153.0" text="Load Customer Data">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#sortCustomerRecordButtonOnAction" prefHeight="25.0" prefWidth="157.0" text="Sort Customer Record">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#filterCustomerButtonOnAction" prefHeight="25.0" prefWidth="159.0" text="Filter Customer">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#searchCustomerByNameOrPlanButtonOnAction" prefHeight="25.0" prefWidth="153.0" text="Search Customer By Name">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#backButtonOnAction" prefHeight="25.0" prefWidth="162.0" text="Back">
+               <VBox.margin>
+                  <Insets top="287.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: orange;" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <Label text="Label" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>
