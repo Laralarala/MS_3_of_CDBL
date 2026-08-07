@@ -20,7 +20,6 @@ public class AddNewCustomer
     @javafx.fxml.FXML
     private TextField boIdTextField;
 
-    static ArrayList<Customer> customersList = new ArrayList<Customer>();
     private Customer c;
 
     @javafx.fxml.FXML
@@ -36,8 +35,6 @@ public class AddNewCustomer
                 Integer.parseInt(numberTextField.getText()),
                 accountNameTextField.getText(),
                 genderComboBox.getValue());
-
-        customersList.add(c);   // keep this — other classes need it
 
         boIdTextField.clear();
         accountNameTextField.clear();
@@ -57,11 +54,11 @@ public class AddNewCustomer
                 fos = new FileOutputStream(f);
                 oos = new ObjectOutputStream(fos);
             }
-            oos.writeObject(c);   // still write only the new one — this part stays the same
+            oos.writeObject(c);   // write only the new customer, no list needed
             oos.close();
-        } catch (Exception e) {
+        }
+        catch (Exception e){
             e.printStackTrace();
         }
-
     }
 }

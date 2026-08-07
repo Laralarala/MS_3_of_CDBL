@@ -4,21 +4,23 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="477.0" prefWidth="758.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RafadinIslam_2111525.UpdateCustomerDetailsController">
+<AnchorPane prefHeight="477.0" prefWidth="758.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RafadinIslam_2111525.UpdateCustomerDetailsController">
    <children>
-      <Button layoutY="132.0" mnemonicParsing="false" onAction="#loadCustomerDetailsButtonOnAction" prefHeight="32.0" prefWidth="260.0" text="Load Customer Details" />
-      <Button layoutX="498.0" layoutY="132.0" mnemonicParsing="false" onAction="#updateCustomerDetailsButtonOnAction" prefHeight="32.0" prefWidth="260.0" text="Update Customer Details" />
-      <TableView fx:id="updateCustomerDetailsTableView" layoutY="277.0" prefHeight="200.0" prefWidth="758.0">
+      <Button layoutX="240.0" layoutY="79.0" mnemonicParsing="false" onAction="#loadCustomerDetailsButtonOnAction" prefHeight="32.0" prefWidth="260.0" text="Load Customer Details" />
+      <Button layoutX="240.0" layoutY="193.0" mnemonicParsing="false" onAction="#updateCustomerDetailsButtonOnAction" prefHeight="32.0" prefWidth="260.0" text="Update Customer Details" />
+      <TableView fx:id="updateCustomerDetailsTableView" layoutY="277.0" prefHeight="200.0" prefWidth="758.0" style="-fx-background-color: yellow;">
         <columns>
           <TableColumn fx:id="boIdTableCol" prefWidth="186.0" text="BO ID" />
           <TableColumn fx:id="accountNameTableCol" prefWidth="182.0" text="Account Name" />
             <TableColumn fx:id="genderTableCol" prefWidth="179.0" text="Gender" />
-            <TableColumn fx:id="numberTableCol" prefWidth="209.0" text="Number" />
+            <TableColumn fx:id="numberTableCol" prefWidth="209.0" style="background-colour: grey;" text="Number" />
         </columns>
       </TableView>
-      <Label fx:id="messageShowingLabel" layoutX="222.0" layoutY="8.0" prefHeight="32.0" prefWidth="315.0" text="Label" />
+      <Label fx:id="messageShowingLabel" layoutX="222.0" layoutY="8.0" prefHeight="32.0" prefWidth="315.0" />
+      <TextField fx:id="updateNumberTextField" layoutX="340.0" layoutY="136.0" prefHeight="25.0" prefWidth="161.0" />
+      <Label layoutX="240.0" layoutY="140.0" text="Update Number" />
    </children>
 </AnchorPane>

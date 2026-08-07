@@ -9,9 +9,8 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import java.io.*;
 import java.util.ArrayList;
 
-import static RafadinIslam_2111525.AddNewCustomer.customersList;
 
-public class DeleteCustomerDetails extends AddNewCustomer
+public class DeleteCustomerDetails
 {
     @javafx.fxml.FXML
     private Label messageShowingLabel;
@@ -25,6 +24,8 @@ public class DeleteCustomerDetails extends AddNewCustomer
     private TableColumn<Customer,String> genderTableCol;
     @javafx.fxml.FXML
     private TableColumn<Customer,Integer> numberTableCol;
+
+    private ArrayList<Customer> customersList = new ArrayList<>();
 
     @javafx.fxml.FXML
     public void initialize() {
