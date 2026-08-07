@@ -16,17 +16,17 @@ public class ComplianceMerchantBankExecutiveViewController
     @javafx.fxml.FXML
     private TextField compIDTF;
     @javafx.fxml.FXML
-    private ComboBox <Integer>statusCB;
-    @javafx.fxml.FXML
     private TableColumn<ComplianceMerchantBankExecutive, Integer> accNoColUser7;
     @javafx.fxml.FXML
     private TableView <ComplianceMerchantBankExecutive>complianceTV;
     @javafx.fxml.FXML
     private TableColumn <ComplianceMerchantBankExecutive, String>statusColUser7;
+    @javafx.fxml.FXML
+    private ComboBox <String>statusCmB;
 
     @javafx.fxml.FXML
     public void initialize() {
-        statusCB.getItems().addAll("Pending","Under Review","Approved","Rejected");
+        statusCmB.getItems().addAll("Pending","Under Review","Approved","Rejected");
 
         accNoColUser7.setCellValueFactory(new PropertyValueFactory<ComplianceMerchantBankExecutive,Integer>("accountNo"));
         compIDColUser7.setCellValueFactory(new PropertyValueFactory<ComplianceMerchantBankExecutive,Integer>("complianceId"));

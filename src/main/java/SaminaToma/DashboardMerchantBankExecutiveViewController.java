@@ -3,11 +3,9 @@ package SaminaToma;
 import com.example.ms_3_of_cdbl.HelloApplication;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
-import javafx.stage.Stage;
 
-public class DashboradMerchantBankExecutiveViewController
+public class DashboardMerchantBankExecutiveViewController
 {
     @javafx.fxml.FXML
     private BorderPane dashboardMerchantBankBP;
@@ -39,6 +37,17 @@ public class DashboradMerchantBankExecutiveViewController
     }
 
     @javafx.fxml.FXML
+    public void approveTransactionViewOA(ActionEvent actionEvent) {
+        try{
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/SaminaToma/ApproveTransaction_MerchantBankExecutiveView.fxml"));
+            dashboardMerchantBankBP.setCenter(fxmlLoader.load());
+        }
+        catch(Exception e){
+
+        }
+    }
+
+    @javafx.fxml.FXML
     public void complianceViewOA(ActionEvent actionEvent) {
         try{
             FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/SaminaToma/Compliance_MerchantBankExecutiveView.fxml"));
@@ -50,9 +59,20 @@ public class DashboradMerchantBankExecutiveViewController
     }
 
     @javafx.fxml.FXML
+    public void updateRecordsViewOA(ActionEvent actionEvent) {
+        try{
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/SaminaToma/Records_MerchantBankExecutiveView.fxml"));
+            dashboardMerchantBankBP.setCenter(fxmlLoader.load());
+        }
+        catch(Exception e){
+
+        }
+    }
+
+    @javafx.fxml.FXML
     public void logOutViewOA(ActionEvent actionEvent) {
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/SaminaToma/User.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/UserLogin.fxml"));
             dashboardMerchantBankBP.setCenter(fxmlLoader.load());
         }
         catch(Exception e){
@@ -86,28 +106,6 @@ public class DashboradMerchantBankExecutiveViewController
     public void transactionViewOA(ActionEvent actionEvent) {
         try{
             FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/SaminaToma/Transaction_MerchantBankExecutiveView.fxml"));
-            dashboardMerchantBankBP.setCenter(fxmlLoader.load());
-        }
-        catch(Exception e){
-
-        }
-    }
-
-    @javafx.fxml.FXML
-    public void approveTransactionViewOA(ActionEvent actionEvent) {
-        try{
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/SaminaToma/ApproveTransaction_MerchantBankExecutiveView.fxml"));
-            dashboardMerchantBankBP.setCenter(fxmlLoader.load());
-        }
-        catch(Exception e){
-
-        }
-    }
-
-    @javafx.fxml.FXML
-    public void updateRecordsViewOA(ActionEvent actionEvent) {
-        try{
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/SaminaToma/Records_MerchantBankExecutiveView.fxml"));
             dashboardMerchantBankBP.setCenter(fxmlLoader.load());
         }
         catch(Exception e){

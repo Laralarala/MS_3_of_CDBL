@@ -20,7 +20,7 @@ public class userDashboardController
 
     @javafx.fxml.FXML
     public void merchantBankExecutiveButtonOnAction(ActionEvent actionEvent) {
-        SceneSwitcher.switchScene(actionEvent,"/SaminaToma/Dashborad_MerchantBankExecutiveView.fxml","merchantBankOfficer");
+        SceneSwitcher.switchScene(actionEvent, "/SaminaToma/Dashboard_MerchantBankExecutiveView.fxml","merchantBankOfficer");
 
     }
 

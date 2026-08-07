@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane fx:id="dashBoardCustodyOfficerBP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SaminaToma.DashboradCustodyOfficerViewController">
+<BorderPane fx:id="dashBoardCustodyOfficerBP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="546.0" prefWidth="809.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SaminaToma.DashboardCustodyOfficerViewController">
    <left>
       <VBox prefHeight="356.0" prefWidth="127.0" style="-fx-background-color: grey;" BorderPane.alignment="CENTER">
          <children>
@@ -50,6 +50,6 @@
       <AnchorPane prefHeight="356.0" prefWidth="508.0" BorderPane.alignment="CENTER" />
    </center>
    <bottom>
-      <Label prefHeight="18.0" prefWidth="633.0" style="-fx-background-color: blue;" text="Label" BorderPane.alignment="CENTER" />
+      <Label prefHeight="18.0" prefWidth="932.0" style="-fx-background-color: blue;" text="Label" BorderPane.alignment="CENTER" />
    </bottom>
 </BorderPane>

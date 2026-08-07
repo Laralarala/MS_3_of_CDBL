@@ -5,7 +5,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.BorderPane;
 
-public class DashboradCustodyOfficerViewController
+public class DashboardCustodyOfficerViewController
 {
     @javafx.fxml.FXML
     private BorderPane dashBoardCustodyOfficerBP;
@@ -28,7 +28,7 @@ public class DashboradCustodyOfficerViewController
     @javafx.fxml.FXML
     public void custodyLogOutViewOA(ActionEvent actionEvent) {
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/SaminaToma/User.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/UserLogin.fxml"));
             dashBoardCustodyOfficerBP.setCenter(fxmlLoader.load());
         }
         catch(Exception e){
