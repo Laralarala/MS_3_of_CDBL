@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="CONTROLLER_NAME"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="527.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MarsiadRahman.DashboradSettlementOfficerView">
+   <children>
+      <Button layoutX="125.0" layoutY="92.0" mnemonicParsing="false" onAction="#ValidateTradeData" text="Validate Trade Data" />
+      <Button layoutX="125.0" layoutY="190.0" mnemonicParsing="false" onAction="#MatchTrades" text="Match Trades" />
+      <Button layoutX="125.0" layoutY="299.0" mnemonicParsing="false" onAction="#SecuritiesSettlement" text="Securities Settlement" />
+      <Button layoutX="125.0" layoutY="402.0" mnemonicParsing="false" onAction="#FundSettlement" text="Fund Settlement" />
+      <Button layoutX="470.0" layoutY="105.0" mnemonicParsing="false" onAction="#GenerateSettlementReport" text="Generate Settlement Report" />
+      <Button layoutX="470.0" layoutY="239.0" mnemonicParsing="false" onAction="#MonitorSettlementStatus" text="Monitor Settlement Status" />
+      <Button layoutX="493.0" layoutY="356.0" mnemonicParsing="false" onAction="#HandleFailedSettlement" text="Handle Failed Settlement" />
+      <Button layoutX="508.0" layoutY="434.0" mnemonicParsing="false" onAction="#ComplianceReview" text="Compliance Review" />
+      <Button layoutX="302.0" layoutY="389.0" mnemonicParsing="false" onAction="#Back" text="Back" />
+   </children>
 </AnchorPane>

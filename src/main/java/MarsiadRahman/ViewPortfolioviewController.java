@@ -1,38 +1,49 @@
 package MarsiadRahman;
 
-import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.scene.control.*;
+import javafx.event.ActionEvent;
 
-public class ViewPortfolioviewController
-{
-    @javafx.fxml.FXML
-    private Label IblStatusMessage;
-    @javafx.fxml.FXML
-    private Button btnBack;
-    @javafx.fxml.FXML
-    private TextField txtBoAccountNo;
-    @javafx.fxml.FXML
-    private TextArea txtAPortfolioDetails;
-    @javafx.fxml.FXML
-    private ComboBox cmbPortfolioOption;
-    @javafx.fxml.FXML
-    private Button btnViewportfolio;
-    @javafx.fxml.FXML
-    private Button btnClear;
+public class ViewPortfolioviewController {
 
-    @javafx.fxml.FXML
+    @FXML private Label lblStatusMessage;
+    @FXML private Button btnBack;
+    @FXML private TextField txtBoAccountNo;
+    @FXML private TextArea txtAPortfolioDetails;
+    @FXML private ComboBox<String> cmbPortfolioOption;
+    @FXML private Button btnViewportfolio;
+    @FXML private Button btnClear;
+
+    @FXML
     public void initialize() {
+
+        cmbPortfolioOption.getItems().addAll("All Securities", "Stocks", "Bonds");
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void viewportfolioOA(ActionEvent actionEvent) {
+        String boNo = txtBoAccountNo.getText();
+
+        if(boNo.isEmpty()){
+            lblStatusMessage.setText("BO Account No dao!");
+            return;
+        }
+
+        txtAPortfolioDetails.setText("BO No: " + boNo + "\n");
+        lblStatusMessage.setText("Portfolio Loaded");
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void backOA(ActionEvent actionEvent) {
+        lblStatusMessage.setText("Back");
+
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void clearOA(ActionEvent actionEvent) {
+        txtBoAccountNo.clear();
+        txtAPortfolioDetails.clear();
+        cmbPortfolioOption.setValue(null);
+        lblStatusMessage.setText("");
     }
 }
