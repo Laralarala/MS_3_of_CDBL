@@ -39,6 +39,7 @@ public class ViewBoAccountDetails
             File f = new File("Customer.bin");
             FileInputStream fis = new FileInputStream(f);
             ObjectInputStream ois = new ObjectInputStream(fis);
+            boAccountDetailsTableView.getItems().clear();
             while (true){
                 boAccountDetailsTableView.getItems().add((Customer) ois.readObject());
 

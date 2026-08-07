@@ -20,11 +20,11 @@ public class AddNewCustomer
     @javafx.fxml.FXML
     private TextField boIdTextField;
 
-    ArrayList<Customer> customersList;
+    static ArrayList<Customer> customersList = new ArrayList<Customer>();
 
     @javafx.fxml.FXML
     public void initialize() {
-        customersList = new ArrayList<Customer>();
+
         genderComboBox.getItems().addAll("Male","Female");
     }
 

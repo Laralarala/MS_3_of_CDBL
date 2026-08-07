@@ -5,15 +5,15 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="457.0" prefWidth="618.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RafadinIslam_2111525.ViewBoAccountDetails">
+<AnchorPane prefHeight="527.0" prefWidth="794.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RafadinIslam_2111525.ViewBoAccountDetails">
    <children>
-      <Button layoutX="166.0" layoutY="140.0" mnemonicParsing="false" onAction="#viewBoAccountDetailsOnActionButton" prefHeight="36.0" prefWidth="255.0" text="View BO Account Details" />
-      <TableView fx:id="boAccountDetailsTableView" layoutY="271.0" prefHeight="182.0" prefWidth="614.0" style="-fx-background-color: yellow;">
+      <Button layoutX="253.0" layoutY="140.0" mnemonicParsing="false" onAction="#viewBoAccountDetailsOnActionButton" prefHeight="36.0" prefWidth="255.0" text="View BO Account Details" />
+      <TableView fx:id="boAccountDetailsTableView" layoutY="271.0" prefHeight="182.0" prefWidth="794.0" style="-fx-background-color: yellow;">
         <columns>
-          <TableColumn fx:id="boIdTableCol" prefWidth="140.0" text="BoID" />
-          <TableColumn fx:id="accountNameTableCol" prefWidth="161.0" text="AccountName" />
-            <TableColumn fx:id="genderTableCol" prefWidth="172.0" text="Gender" />
-            <TableColumn fx:id="numberTableCol" prefWidth="134.0" text="Number" />
+          <TableColumn fx:id="boIdTableCol" prefWidth="187.0" text="BoID" />
+          <TableColumn fx:id="accountNameTableCol" prefWidth="191.0" text="AccountName" />
+            <TableColumn fx:id="genderTableCol" prefWidth="207.0" text="Gender" />
+            <TableColumn fx:id="numberTableCol" prefWidth="208.0" text="Number" />
         </columns>
       </TableView>
    </children>
