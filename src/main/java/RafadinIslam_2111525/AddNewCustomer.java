@@ -21,6 +21,7 @@ public class AddNewCustomer
     private TextField boIdTextField;
 
     static ArrayList<Customer> customersList = new ArrayList<Customer>();
+    private Customer c;
 
     @javafx.fxml.FXML
     public void initialize() {
@@ -31,15 +32,15 @@ public class AddNewCustomer
     @javafx.fxml.FXML
     public void addNewCustomerOnActionButton(ActionEvent actionEvent) {
         //int boId, int number, String accountName, String gender
-        Customer c = new Customer(Integer.parseInt(boIdTextField.getText()),
+        c = new Customer(Integer.parseInt(boIdTextField.getText()),
                 Integer.parseInt(numberTextField.getText()),
                 accountNameTextField.getText(),
                 genderComboBox.getValue());
 
-        customersList.add(c);
+        customersList.add(c);   // keep this — other classes need it
+
         boIdTextField.clear();
         accountNameTextField.clear();
-        genderComboBox.cancelEdit();
         numberTextField.clear();
     }
 
@@ -47,25 +48,19 @@ public class AddNewCustomer
     public void addNewCustomerBinFileOnActionButton(ActionEvent actionEvent) {
         try {
             File f = new File("Customer.bin");
-            FileOutputStream fos = null;
-            ObjectOutputStream oos = null;
-            if (f.exists()){
-                fos = new FileOutputStream(f,true);
+            FileOutputStream fos;
+            ObjectOutputStream oos;
+            if (f.exists()) {
+                fos = new FileOutputStream(f, true);
                 oos = new AppendableObjectOutputStream(fos);
-            }
-            else {
+            } else {
                 fos = new FileOutputStream(f);
                 oos = new ObjectOutputStream(fos);
             }
-            for (Customer c : customersList){
-                oos.writeObject(c);
-            }
+            oos.writeObject(c);   // still write only the new one — this part stays the same
             oos.close();
-
-
-        }
-        catch (Exception e){
-            //
+        } catch (Exception e) {
+            e.printStackTrace();
         }
 
     }
