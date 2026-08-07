@@ -21,25 +21,25 @@ public class ComplianceOfficerDashboardController
 
     @javafx.fxml.FXML
     public void submitSTROnAction(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("submitSTR-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/Shawrob/submitSTR-view.fxml"));
         complianceOfficerDashboardBP.setCenter(fxmlLoader.load());
     }
 
     @javafx.fxml.FXML
     public void policyManagementOnAction(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("policyManagement-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/Shawrob/policyManagement-view.fxml"));
         complianceOfficerDashboardBP.setCenter(fxmlLoader.load());
     }
 
     @javafx.fxml.FXML
     public void freezeAccountOnAction(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("freezeAccount-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/Shawrob/freezeAccount-view.fxml"));
         complianceOfficerDashboardBP.setCenter(fxmlLoader.load());
     }
 
     @javafx.fxml.FXML
     public void logoutOnAction(ActionEvent actionEvent) throws IOException{
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("UserLogin.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/UserLogin.fxml"));
         Scene nextScene = new Scene(fxmlLoader.load());
         Stage nextStage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
         nextStage.setTitle("CDBL");
@@ -49,31 +49,31 @@ public class ComplianceOfficerDashboardController
 
     @javafx.fxml.FXML
     public void unfreezeAccountOnAction(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("unfreezeAccount-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/Shawrob/unfreezeAccount-view.fxml"));
         complianceOfficerDashboardBP.setCenter(fxmlLoader.load());
     }
 
     @javafx.fxml.FXML
     public void dpAuditOnAction(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("dpAudit-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/Shawrob/dpAudit-view.fxml"));
         complianceOfficerDashboardBP.setCenter(fxmlLoader.load());
     }
 
     @javafx.fxml.FXML
     public void kycReviewOnAction(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("kycReview-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/Shawrob/kycReview-view.fxml"));
         complianceOfficerDashboardBP.setCenter(fxmlLoader.load());
     }
 
     @javafx.fxml.FXML
     public void tradingLimitOnAction(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("tradingLimit-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/Shawrob/tradingLimit-view.fxml"));
         complianceOfficerDashboardBP.setCenter(fxmlLoader.load());
     }
 
     @javafx.fxml.FXML
     public void suspiciousTransactionsOnAction(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("suspiciousTransactions-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/Shawrob/suspiciousTransactions-view.fxml"));
         complianceOfficerDashboardBP.setCenter(fxmlLoader.load());
     }
 }

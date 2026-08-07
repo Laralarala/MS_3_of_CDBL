@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="reportOfficerDashboardBP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Shawrob.ReportOfficerDashboardController">
+<BorderPane fx:id="reportOfficerDashboardBP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Shawrob.ReportOfficerDashboardController">
    <top>
       <MenuBar BorderPane.alignment="CENTER">
         <menus>
@@ -94,6 +94,6 @@
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
    </center>
    <bottom>
-      <Label prefHeight="17.0" prefWidth="605.0" style="-fx-background-color: blue;" text="Label" textFill="WHITE" BorderPane.alignment="CENTER" />
+      <Label prefHeight="17.0" prefWidth="753.0" style="-fx-background-color: blue;" text="Label" textFill="WHITE" BorderPane.alignment="CENTER" />
    </bottom>
 </BorderPane>
