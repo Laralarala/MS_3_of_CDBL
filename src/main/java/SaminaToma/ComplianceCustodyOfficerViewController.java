@@ -5,6 +5,7 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 public class ComplianceCustodyOfficerViewController
 {
@@ -25,6 +26,11 @@ public class ComplianceCustodyOfficerViewController
 
     @javafx.fxml.FXML
     public void initialize() {
+        custodyStatusCmB.getItems().addAll("Pending","Under Review","Approved","Rejected");
+
+        custodyCompIDCol.setCellValueFactory(new PropertyValueFactory<ComplianceCustodyOfficer,Integer>("complianceId"));
+        custodyAccNoCol.setCellValueFactory(new PropertyValueFactory<ComplianceCustodyOfficer, Integer>("accountNo"));
+        custodyStatusCol.setCellValueFactory(new PropertyValueFactory<ComplianceCustodyOfficer, String>("status"));
     }
 
     @javafx.fxml.FXML

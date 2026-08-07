@@ -2,6 +2,7 @@ package SaminaToma;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.time.LocalDate;
 
@@ -34,6 +35,13 @@ public class TransactionCustodyOfficerViewController
 
     @javafx.fxml.FXML
     public void initialize() {
+        custodyTransactionTypeCmB.getItems().addAll("Deposit","Withdrawal","Transfer","Buy","Sell");
+
+        custodyTransactionIDCol.setCellValueFactory(new PropertyValueFactory<TransactionCustodyOfficer,String>("transactionId"));
+        custodyTransactionTypeCol.setCellValueFactory(new PropertyValueFactory<TransactionCustodyOfficer,String>("transactionType"));
+        custodyTransactionDateCol.setCellValueFactory(new PropertyValueFactory<TransactionCustodyOfficer,LocalDate>("transactionDate"));
+        custodyQuantityCol.setCellValueFactory(new PropertyValueFactory<TransactionCustodyOfficer,Integer>("quantity"));
+        custodyAmountCol.setCellValueFactory(new PropertyValueFactory<TransactionCustodyOfficer,Float>("amount"));
     }
 
     @javafx.fxml.FXML

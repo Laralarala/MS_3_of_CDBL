@@ -1,7 +1,7 @@
 package SaminaToma;
 
 public class SecurityCustodyOfficer {
-    private private String securityId,companyName;
+    private String securityId,companyName;
     private int quantity;
     private Float price;
 

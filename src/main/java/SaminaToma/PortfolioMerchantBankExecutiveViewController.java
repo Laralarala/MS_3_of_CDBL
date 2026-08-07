@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 public class PortfolioMerchantBankExecutiveViewController
 {
@@ -22,6 +23,10 @@ public class PortfolioMerchantBankExecutiveViewController
 
     @javafx.fxml.FXML
     public void initialize() {
+        accNumColUser7.setCellValueFactory(new PropertyValueFactory<PortfolioMerchantBankExecutive,Integer>("accountNumber"));
+        portfolioIDColUser7.setCellValueFactory(new PropertyValueFactory<PortfolioMerchantBankExecutive,String>("portfolioId"));
+        quantityColUser7.setCellValueFactory(new PropertyValueFactory<PortfolioMerchantBankExecutive,Integer>("quantity"));
+        totalValueColUser7.setCellValueFactory(new PropertyValueFactory<PortfolioMerchantBankExecutive,Float>("totalValue"));
     }
 
     @javafx.fxml.FXML

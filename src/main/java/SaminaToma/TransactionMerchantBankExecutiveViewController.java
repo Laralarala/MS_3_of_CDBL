@@ -2,6 +2,7 @@ package SaminaToma;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.time.LocalDate;
 
@@ -34,6 +35,12 @@ public class TransactionMerchantBankExecutiveViewController
 
     @javafx.fxml.FXML
     public void initialize() {
+        transactionTypeCB.getItems().addAll("Buy","Sell","Deposit","Withdrawal","Transfer","IPO Subscription");
+
+        transactionIDColUser7.setCellValueFactory(new PropertyValueFactory<TransactionMerchantBankExecutive,String>("transactionId"));
+        transactionDateColUser7.setCellValueFactory(new PropertyValueFactory<TransactionMerchantBankExecutive,LocalDate>("transactionDate"));
+        quantityColUser7.setCellValueFactory(new PropertyValueFactory<TransactionMerchantBankExecutive,Integer>("quantity"));
+        amountColUser7.setCellValueFactory(new PropertyValueFactory<TransactionMerchantBankExecutive,Float>("amount"));
     }
 
     @javafx.fxml.FXML

@@ -5,6 +5,7 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 public class AccountCustodyOfficerViewController
 {
@@ -31,6 +32,12 @@ public class AccountCustodyOfficerViewController
 
     @javafx.fxml.FXML
     public void initialize() {
+        custodyStatusCmB.getItems().addAll("Active","Inactive","Suspended","Closed");
+
+        custodyAccIDCol.setCellValueFactory(new PropertyValueFactory<AccountCustodyOfficer, String>("accountId"));
+        custodyAccNameCol.setCellValueFactory(new PropertyValueFactory<AccountCustodyOfficer, String>("accountName"));
+        custodyHolderNameCol.setCellValueFactory(new PropertyValueFactory<AccountCustodyOfficer, String>("holderName"));
+        custodyStatusCol.setCellValueFactory(new PropertyValueFactory<AccountCustodyOfficer, String>("status"));
     }
 
     @javafx.fxml.FXML

@@ -5,6 +5,7 @@ import javafx.scene.control.DatePicker;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.time.LocalDate;
 
@@ -27,6 +28,9 @@ public class ReportCustodyOfficerViewController
 
     @javafx.fxml.FXML
     public void initialize() {
+        custodyReportIDCol.setCellValueFactory(new PropertyValueFactory<ReportCustodyOfficer,String>("reportId"));
+        custodyReportDateCol.setCellValueFactory(new PropertyValueFactory<ReportCustodyOfficer,LocalDate>("reportDate"));
+        custodyReportTypeCol.setCellValueFactory(new PropertyValueFactory<ReportCustodyOfficer,String>("reportType"));
     }
 
     @javafx.fxml.FXML

@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 public class SecurityMerchantBankExecutiveViewController
 {
@@ -28,6 +29,10 @@ public class SecurityMerchantBankExecutiveViewController
 
     @javafx.fxml.FXML
     public void initialize() {
+        companyNameColUser7.setCellValueFactory(new PropertyValueFactory<SecurityMerchantBankExecutive,String>("companyName"));
+        securityIDColUser7.setCellValueFactory(new PropertyValueFactory<SecurityMerchantBankExecutive,String>("securityId"));
+        quantityColUser7.setCellValueFactory(new PropertyValueFactory<SecurityMerchantBankExecutive,Integer>("quantity"));
+        priceColUser7.setCellValueFactory(new PropertyValueFactory<SecurityMerchantBankExecutive,Float>("price"));
     }
 
     @javafx.fxml.FXML

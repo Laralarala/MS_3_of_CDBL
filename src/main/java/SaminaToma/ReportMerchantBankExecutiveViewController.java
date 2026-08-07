@@ -5,6 +5,7 @@ import javafx.scene.control.DatePicker;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.time.LocalDate;
 
@@ -27,6 +28,9 @@ public class ReportMerchantBankExecutiveViewController
 
     @javafx.fxml.FXML
     public void initialize() {
+        reportDateColUser7.setCellValueFactory(new PropertyValueFactory<ReportMerchantBankExecutive,LocalDate>("reportDate"));
+        reportIDColUser7.setCellValueFactory(new PropertyValueFactory<ReportMerchantBankExecutive,String>("reportId"));
+        reportTypeColUser7.setCellValueFactory(new PropertyValueFactory<ReportMerchantBankExecutive,String>("reportType"));
     }
 
     @javafx.fxml.FXML

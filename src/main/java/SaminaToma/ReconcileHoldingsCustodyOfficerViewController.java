@@ -5,6 +5,7 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 public class ReconcileHoldingsCustodyOfficerViewController
 {
@@ -37,6 +38,14 @@ public class ReconcileHoldingsCustodyOfficerViewController
 
     @javafx.fxml.FXML
     public void initialize() {
+        custodyStatusCmB.getItems().addAll("Matched","Mismatch","Pending","Reconciled");
+
+        custodySecurityIDCol.setCellValueFactory(new PropertyValueFactory<ReconcileHoldingsCustodyOfficer, String>("securityId"));
+        custodyHoldingIDCol.setCellValueFactory(new PropertyValueFactory<ReconcileHoldingsCustodyOfficer, String>("holdingId"));
+        custodySecurityNameCol.setCellValueFactory(new PropertyValueFactory<ReconcileHoldingsCustodyOfficer, String>("securityName"));
+        custodyAccNumCol.setCellValueFactory(new PropertyValueFactory<ReconcileHoldingsCustodyOfficer, Integer>("accountNumber"));
+        custodyQuantityCol.setCellValueFactory(new PropertyValueFactory<ReconcileHoldingsCustodyOfficer, Integer>("quantity"));
+        custodyStatusCol.setCellValueFactory(new PropertyValueFactory<ReconcileHoldingsCustodyOfficer, String>("status"));
     }
 
     @javafx.fxml.FXML

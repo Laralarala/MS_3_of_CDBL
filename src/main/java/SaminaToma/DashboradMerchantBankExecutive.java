@@ -1,5 +1,4 @@
 package SaminaToma;
 
-public class
-DashboradMerchantBankExecutive {
+public class DashboradMerchantBankExecutive {
 }

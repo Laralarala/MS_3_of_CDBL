@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.time.LocalDate;
 
@@ -28,6 +29,12 @@ public class ApproveTransactionMerchantBankExecutiveViewController
 
     @javafx.fxml.FXML
     public void initialize() {
+        transactionIDColUser7.setCellValueFactory(new PropertyValueFactory<ApproveTransactionMerchantBankExecutive,String>("transactionId"));
+        transactionTypeColUser7.setCellValueFactory(new PropertyValueFactory<ApproveTransactionMerchantBankExecutive,String>("transactionType"));
+        accNumColUser7.setCellValueFactory(new PropertyValueFactory<ApproveTransactionMerchantBankExecutive,Integer>("accountNumber"));
+        transactionDateColUser7.setCellValueFactory(new PropertyValueFactory<ApproveTransactionMerchantBankExecutive,LocalDate>("transactionDate"));
+        amountColUser7.setCellValueFactory(new PropertyValueFactory<ApproveTransactionMerchantBankExecutive,Float>("amount"));
+        statusColUser7.setCellValueFactory(new PropertyValueFactory<ApproveTransactionMerchantBankExecutive,String>("status"));
     }
 
     @javafx.fxml.FXML

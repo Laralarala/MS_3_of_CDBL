@@ -5,6 +5,7 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 public class AccountMerchantBankExecutiveViewController
 {
@@ -31,6 +32,12 @@ public class AccountMerchantBankExecutiveViewController
 
     @javafx.fxml.FXML
     public void initialize() {
+        statusCB.getItems().addAll("Active","Pending","Approved","Rejected","Closed");
+
+        accIDColUser7.setCellValueFactory(new PropertyValueFactory<AccountMerchantBankExecutive, Integer>("accountId"));
+        accNameColUser7.setCellValueFactory(new PropertyValueFactory<AccountMerchantBankExecutive, String>("accountName"));
+        balanceColUser7.setCellValueFactory(new PropertyValueFactory<AccountMerchantBankExecutive, Float>("balance"));
+        statusColUser7.setCellValueFactory(new PropertyValueFactory<AccountMerchantBankExecutive, String>("status"));
     }
 
     @javafx.fxml.FXML

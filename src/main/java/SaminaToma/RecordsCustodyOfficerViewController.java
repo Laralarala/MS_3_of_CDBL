@@ -5,6 +5,7 @@ import javafx.scene.control.DatePicker;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.time.LocalDate;
 
@@ -33,6 +34,10 @@ public class RecordsCustodyOfficerViewController
 
     @javafx.fxml.FXML
     public void initialize() {
+        custodyClientIDCol.setCellValueFactory(new PropertyValueFactory<RecordsCustodyOfficer,String>("clientId"));
+        custodyClientNameCol.setCellValueFactory(new PropertyValueFactory<RecordsCustodyOfficer,String>("clientName"));
+        custodyAccNumCol.setCellValueFactory(new PropertyValueFactory<RecordsCustodyOfficer,Integer>("accountNumber"));
+        custodyDateOfBirthCol.setCellValueFactory(new PropertyValueFactory<RecordsCustodyOfficer,LocalDate>("dateOfBirth"));
     }
 
     @javafx.fxml.FXML

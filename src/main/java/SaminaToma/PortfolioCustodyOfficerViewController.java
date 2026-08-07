@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 public class PortfolioCustodyOfficerViewController
 {
@@ -22,6 +23,10 @@ public class PortfolioCustodyOfficerViewController
 
     @javafx.fxml.FXML
     public void initialize() {
+        custodyPortfolioIDCol.setCellValueFactory(new PropertyValueFactory<PortfolioCustodyOfficer,String>("portfolioId"));
+        custodyAccNumCol.setCellValueFactory(new PropertyValueFactory<PortfolioCustodyOfficer, Integer>("accountNumber"));
+        custodyQuantityCol.setCellValueFactory(new PropertyValueFactory<PortfolioCustodyOfficer, Integer>("quantity"));
+        custodyTotalValueCol.setCellValueFactory(new PropertyValueFactory<PortfolioCustodyOfficer, Float>("totalValue"));
     }
 
     @javafx.fxml.FXML
